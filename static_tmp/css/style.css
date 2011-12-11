@@ -185,6 +185,15 @@ footer {
     background:#fff;
     border-left:1px solid #868686;
     border-right:1px solid #868686;
+    padding: 28px 0;
+}
+
+.slideshow {
+    margin:0 0 56px 23px;
+}
+
+.visualNav {
+    margin:0 0 189px 47px;
 }
 
 /*
