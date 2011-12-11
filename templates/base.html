@@ -1,12 +1,95 @@
-{% load cms_tags sekizai_tags %}
-<html>
+{% load cms_tags sekizai_tags menu_tags %}
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
   <head>
-      {% render_block "css" %}
+    {% render_block "css" %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{% block page_title %}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}" />
+    <meta name="author" content="{% block meta_author %}{% endblock %}" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {# TODO: <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" /> #}
+    {# TODO: <link rel="apple-touch-icon" href="{{ STATIC_URL }}images/apple-touch-icon.png" /> #}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css?v=2" />
+    <script src="{{ STATIC_URL }}js/libs/modernizr-2.0.6.min.js"></script>
   </head>
-  <body>
-      {% cms_toolbar %}
-      {% placeholder base_content %}
-      {% block base_content%}{% endblock %}
-      {% render_block "js" %}
+  <body class="{% block body_class %}{% endblock %}">
+	{% cms_toolbar %}
+	<div id="container">
+	    <header>
+		<div class="row">
+		    <h1><img src="{{STATIC_URL}}img/logo.png"/></h1>
+		    <ul class="nav">
+		      {% show_menu 0 100 100 100 %}
+		    </ul>
+		    <ul class="secondary-nav">
+			<li><a href="/locations/">Locations</a></li>
+			<li><a href="/contact/">Contact</a></li>
+			<li><a href="/news/">News</a></li>
+			<li><a href="/calendar/">Calendar</a></li>
+			<li><a href="/careers/">Careers</a></li>
+			<li><a href="/resources/">Resources</a></li>
+		    </ul>
+		    <!--<p class="languageChooser">{% language_chooser %}</p>-->
+		</div>
+	    </header>
+	    <div id="main" role="main">
+		<div class="row">
+		{% block base_content%}Base{% endblock %}
+		</div>
+	    </div>
+	    <footer>
+		<div class="row">
+		    <ul class="footer-nav">
+			<li><a href="/contact/">Contact</a></li>
+			<li><a href="/site-map/">Site Map</a></li>
+			<li><a href="/careers/">Careers</a></li>
+			<li><a href="/search/">Search this site</a></li>
+			<li><a href="/privacy/">Privacy</a></li>
+		    </ul>
+		    <ul class="footer-info">
+			<li>&copy;{% now "Y" %} CPI</li>
+			<li>+1(281)207-4600</li>
+			<li>(800)675-6646</li>
+		    </ul>
+		    <ul class="social">
+			<li><a href=""><img src="{{ STATIC_URL}}img/facebook-logo.png" alt="Facebook Logo"/></a><li>
+			<li><a href=""><img src="{{ STATIC_URL}}img/linkedIn-logo.png" alt="linkedIn Logo"/></a><li>
+			<li><a href=""><img src="{{ STATIC_URL}}img/youtube-logo.png" alt="youtube Logo"/></a><li>
+			<li><a href=""><img src="{{ STATIC_URL}}img/unknown-logo.png" alt="unknown Logo"/></a><li>
+		    </ul>
+		    <div class="enpro-logo"><img src="{{ STATIC_URL}}img/enpro-logo.png" alt="Enpro Logo"/></div>
+		</div>
+	    </footer>
+	</div> <!-- end of #container -->
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+	<script>window.jQuery || document.write('<script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+      
+      
+	<!-- scripts concatenated and minified via ant build script-->
+	<script defer src="{{ STATIC_URL }}js/plugins.js"></script>
+	<script src="{{ STATIC_URL }}js/mylibs/mediaelement/build/mediaelement-and-player.min.js"></script>
+	<script defer src="{{ STATIC_URL }}js/script.js"></script>
+	<!-- end scripts-->
+      
+      
+	<!--script> // Change UA-XXXXX-X to be your site's ID
+	  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	  Modernizr.load({
+	    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	  });
+	</script-->
+      
+      
+	<!--[if lt IE 7 ]>
+	  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+	  {% render_block "js" %}
   </body>
 </html>

@@ -17,10 +17,14 @@ urlpatterns = patterns('',
     url(r'^', include('cms.urls')),
 )
 
+if settings.DEBUG:
+    urlpatterns += patterns('django.contrib.staticfiles.views',
+        url(r'^static/(?P<path>.*)$', 'serve'),
+    )
 
 if settings.DEBUG:
-    urlpatterns = patterns('',
+    urlpatterns += patterns('',
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
     url(r'', include('django.contrib.staticfiles.urls')),
-) + urlpatterns
+) 
