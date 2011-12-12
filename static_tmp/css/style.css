@@ -139,7 +139,27 @@ header h1 {
     text-decoration:underline;
 }
 
-.nav li, .secondary-nav li {
+.nav li ul {
+    display:none;
+}
+
+.nav li:hover ul {
+    display:block;
+    position: absolute;
+    border-bottom:1px solid #404040;
+    background: #333;
+    list-style: none;
+    padding:0;
+    margin:4px 0 0 -10px;
+}
+
+.nav li ul li a {
+    text-transform:none;
+    font-size:11px;
+    border-bottom:1px solid #404040;
+}
+
+.nav > li, .secondary-nav li {
     float:left;
     margin: 0;
     padding: 4px 10px;
@@ -153,6 +173,44 @@ header h1 {
     float:left;
     margin: 0;
     padding: 0px 10px;
+}
+
+.social a {
+    width:35px;
+    height:36px;
+    display:block;
+}
+
+.facebook {
+    background: url(../img/social-sprite.png) 0 -39px;
+}
+
+.facebook:hover {
+    background: url(../img/social-sprite.png) 0 -1px;
+}
+
+.linkedIn {
+    background: url(../img/social-sprite.png) -41px -39px;
+}
+
+.linkedIn:hover {
+    background: url(../img/social-sprite.png) -41px -1px;
+}
+
+.youtube {
+    background: url(../img/social-sprite.png) -81px -39px;
+}
+
+.youtube:hover {
+    background: url(../img/social-sprite.png) -81px -1px;
+}
+
+.flickr {
+    background: url(../img/social-sprite.png) -120px -39px;
+}
+
+.flickr:hover {
+    background: url(../img/social-sprite.png) -120px -1px;
 }
 
 .nav li {
