@@ -1,11 +1,20 @@
 /* Author: Jason Gonzales
 
 */
+function languageChooser(){
+    //$('.language').hover(
+    //    function(){$(this).children().show();},
+    //    function(){$(this).children().hide();}
+    //)
+    
+}
+
+
 UTIL = {
  
   fire : function(func,funcname, args){
  
-    var namespace = RUFFIN;  // indicate your obj literal namespace here
+    var namespace = CPI;  // indicate your obj literal namespace here
  
     funcname = (funcname === undefined) ? 'init' : funcname;
     if (func !== '' && namespace[func] && typeof namespace[func][funcname] == 'function'){
@@ -35,13 +44,27 @@ UTIL = {
 
 
 
-RUFFIN = {
+CPI = {
     common : {
-        init : function(){},
+        init : function(){
+            languageChooser();
+            
+            },
         finalize : function(){}
     },
     home : {
-        init : function(){
+        init : function(){},
+        someID : function(){}
+    }
+}
+
+
+
+// kick it all off here 
+$(document).ready(UTIL.loadEvents);
+
+/*
+function(){
             i = 0;
             function runIt(){
                 var slides = $('.slideshow').find('img');
@@ -61,21 +84,4 @@ RUFFIN = {
             
             });
             },
-        someID : function(){}
-    },
-    gallery : {
-        init : function(){
-            $(".galleryLink").colorbox({
-                rel:'galleryLink',
-                maxWidth: '85%',
-                maxHeight: '85%'
-                });
-        }
-    }
-}
-
-
-
-// kick it all off here 
-$(document).ready(UTIL.loadEvents);
-
+            */

@@ -76,8 +76,7 @@ body {
 .row {
     width:1026px;
     margin:0 auto;
-    overflow:auto;
-    position:relative;
+    overflow:hidden;
 }
 
 header {
@@ -112,9 +111,8 @@ header h1 {
 }
 
 .secondary-nav {
-    position:absolute;
-    top:0;
-    right:0;   
+    float: left;
+    margin: -100px 0 0 488px;
 }
 
 .nav a {
@@ -161,11 +159,39 @@ header h1 {
     margin: 0 10px;
 }
 
-.nav .selected {
+.nav .selected, .nav li:hover {
     background:#00a6ca;
 }
 
-.nav .selected a {
+.nav .selected a, .nav li:hover a {
+    color:#fff;
+}
+
+.secondary-nav .language .langs {
+    display:none;
+}
+
+.secondary-nav .language:hover {
+    text-decoration:none;
+
+}
+
+.secondary-nav .language:hover .langs {
+    display: block;
+    position: absolute;
+    border-bottom:1px solid #404040;
+    background: #333;
+    /*margin-left: -15px;*/ /*in case they want me top pull it left*/
+}
+
+.secondary-nav .language .langs a {
+    display:block;
+    padding: 8px 20px;
+    border-bottom:1px solid #404040;
+}
+
+.secondary-nav .language .langs a.current, .secondary-nav .language .langs a:hover  {
+    background: #00A6CA;
     color:#fff;
 }
 
@@ -176,9 +202,8 @@ footer {
 }
 
 .enpro-logo {
-    position:absolute;
-    right:19px;
-    top:0;
+  float:right;
+  margin: -25px 0 0 0;
 }
 
 #main .row {
