@@ -79,6 +79,14 @@ body {
     overflow:hidden;
 }
 
+.align-left {
+    float:left;
+}
+
+.align-right {
+    float:right;
+}
+
 header {
     overflow:auto;
     height:127px;
@@ -86,14 +94,80 @@ header {
 
 }
 
+.font8 {
+    font-size:8px
+}
+
+.font9 {
+    font-size:9px
+}
+
+.font10 {
+    font-size:10px
+}
+
+.font11 {
+    font-size:11px
+}
+
+.marginTop10 {
+    margin-top:10px
+}
+.marginTop20 {
+    margin-top:20px
+}
+.marginTop30 {
+    margin-top:30px
+}
+.marginTop40 {
+    margin-top:40px
+}
+.marginTop50 {
+    margin-top:50px
+}
+.marginTop60 {
+    margin-top:60px
+}
+.marginTop70 {
+    margin-top:70px
+}
+.marginTop80 {
+    margin-top:80px
+}
+.marginTop90 {
+    margin-top:90px
+}
+.marginTop100 {
+    margin-top:100px
+}
+
+.clearBoth {
+    clear:both;
+}
+
 h1, h2, h3, h4 {
-    font-family: 'Georgia', georgia, serif;
 }
 
 header h1 { 
     float:left;
     margin:0;
     padding:0 0 0 40px;
+}
+
+/*this is for the demo*/
+h1.imageCaption60{
+    position: relative;
+    top: 185px;
+    left: 10px;
+    color: white;
+    font-size: 60px;
+    text-shadow: 3px 3px 5px #111;
+    margin: -59px 0 0 0;
+}
+
+
+h2 {
+    font-size:20px;
 }
 
 .nav, .secondary-nav, .footer-nav, .footer-info, .social {
@@ -151,6 +225,7 @@ header h1 {
     list-style: none;
     padding:0;
     margin:4px 0 0 -10px;
+    z-index:100;
 }
 
 .nav li ul li a {
@@ -217,11 +292,11 @@ header h1 {
     margin: 0 10px;
 }
 
-.nav .selected, .nav li:hover {
+.nav .selected, .nav .ancestor, .nav li:hover {
     background:#00a6ca;
 }
 
-.nav .selected a, .nav li:hover a {
+.nav .selected a, .nav li:hover a, .nav .ancestor a {
     color:#fff;
 }
 
@@ -242,15 +317,79 @@ header h1 {
     /*margin-left: -15px;*/ /*in case they want me top pull it left*/
 }
 
-.secondary-nav .language .langs a {
+.nav li ul li  {
+    margin:0;
+}
+
+.secondary-nav .language .langs a, .nav li ul li a {
     display:block;
     padding: 8px 20px;
     border-bottom:1px solid #404040;
 }
 
-.secondary-nav .language .langs a.current, .secondary-nav .language .langs a:hover  {
+.nav li ul li a {
+   background:url(../img/gtArrow.png) no-repeat 10px 15px;
+   padding:14px 24px;
+}
+
+.secondary-nav .language .langs a.current,
+.secondary-nav .language .langs a:hover,
+.tertiaryNav ul li:hover,
+.tertiaryNav ul li:hover a,
+.tertiaryNav ul li.selected,
+.tertiaryNav ul li.selected a{
     background: #00A6CA;
     color:#fff;
+}
+
+.breadcrumbs ul {
+    list-style:none;
+    padding:0;
+}
+
+.breadcrumbs ul li {
+    display:inline-block;
+    font-size:14px;
+}
+
+.breadcrumbs ul li a {
+    color:#00a6ca;
+}
+
+.banner, .breadcrumbs {
+    margin: 0 auto;
+    width: 937px;
+    overflow: hidden;
+}
+
+.tertiaryNav {
+    margin:0 0 0 44px;
+    padding:13px;
+    width:252px;
+    background:#e4e4e4;
+    border:1px solid #d6d6d6;
+    float:left;
+}
+
+.tertiaryNav ul {
+    list-style:none;
+    padding:0;
+}
+
+.tertiaryNav ul li {
+    font-size:20px;
+    padding:3px;
+}
+
+.tertiaryNav ul li a {
+    text-decoration:none;
+    color:#333;
+}
+
+.product-page .article {
+    float: right;
+    width: 631px;
+    margin: 0 44px 0 0;
 }
 
 footer {
@@ -278,6 +417,22 @@ footer {
 .visualNav {
     margin:0 0 189px 47px;
 }
+/*_________product page styles*/
+#productSpotlightContainer {
+    padding: 0 34px;
+    margin: 70px 0 0 0;
+    overflow: auto;
+}
+
+.productSpotlight {
+    float:left;
+    width:295px;
+    margin: 7px 12px;
+}
+
+/*________end product page styles*/
+
+
 
 /*
     ColorBox Core Style:

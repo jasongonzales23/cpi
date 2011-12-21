@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+ {% load menu_tags %}
+{% block base_content %}
+    <div class="breadcrumbs">
+        {% show_breadcrumb %}
+    </div>
+    <div class="testNav">
+        <ul>
+            {% show_menu 2 3 100 100 %}
+        </ul>
+    </div>
+    
+    <div class="slideshow">
+	{% placeholder content_1 %}
+    </div>
+    <div class="visualNav">
+	{% placeholder content_2 %}
+    </div>
+{% endblock %}

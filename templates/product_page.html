@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block body_class %}product-page{% endblock %}
+{% block base_content %}
+    <div class="banner">
+        {% placeholder product_page_banner %}
+    </div>
+    <div id="productSpotlightContainer">
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight1 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight2 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight3 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight4 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight5 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight6 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight7 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight8 %}
+	</div>
+	<div class="productSpotlight">
+	    {% placeholder product_spotlight9 %}
+	</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% block body_class %}product-page sidebarMenu{% endblock %}
+{% block base_content %}
+    <div class="banner">
+        {% placeholder product_page_banner %}
+    </div>
+    <div class="breadcrumbs">
+        <ul>
+        {% show_breadcrumb %}
+        </ul>
+    </div>
+    <div class="tertiaryNav">
+        <h2 class="secondaryAncestor"></h2> <!--Could grab this with JS, but prefer to do it with template logic-->
+        <ul>
+            {#% show_sub_menu 1%#}
+            {% show_menu 2 2 100 100 %}
+            
+        </ul>
+    </div>
+    
+    <div class="article">
+	{% placeholder content_1 %}
+    </div>
+{% endblock %}

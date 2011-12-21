@@ -60,8 +60,23 @@ CPI = {
 
 
 
+$(document).ready(function(){
+    //this only goes on pages that get a sidebar nav
+    var heading = $('.nav').find('.ancestor').eq(1).text();
+    $('.secondaryAncestor').text(heading);
+    
+    //to put text onto the image for banners
+    //pulls it from an H1 within the banner container
+    //this is mainly for demoing right now
+    var caption = $('.banner').find('h1');
+    var bannerImg = $('.banner').find('img');
+    caption.addClass('imageCaption60');
+});
+
+
+
 // kick it all off here 
-$(document).ready(UTIL.loadEvents);
+//$(document).ready(UTIL.loadEvents);
 
 /*
 function(){
