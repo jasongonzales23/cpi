@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% block body_class %}contact-us sidebarMenu{% endblock %}
+{% block base_content %}
+    <div class="banner">
+        {% placeholder contact_us_banner %}
+    </div>
+    <div class="article">
+      {% placeholder header %}
+      <div class="address">
+        {% placeholder address %}
+      </div>
+      {% placeholder intro %}
+
+      <form accept-charset="UTF-8" action="/users" id="contact" method="post" novalidate="novalidate">
+        <p class="field">
+          <label for="first-name">First Name<span class="required">*</span></label>
+          <input class="string  required" id="first-name" maxlength="255" name="" size="30" type="">
+          <label class="last-name" for="last-name">Last Name<span class="required">*</span></label>
+          <input class="string  required" id="last-name" maxlength="255" name="" size="30" type="">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Company</label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="56" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Address</label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="56" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">City / State / Zip<span class="required">*</span></label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="20" type="text"><span class="divider">/</span>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="20" type="text"><span class="divider">/</span>
+          <input class="string email required" id="user_email" maxlength="55" name="email" size="10" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Country</label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="30" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Phone<span class="required">*</span></label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="30" type="phone">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Email<span class="required">*</span></label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="30" type="email">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Url</label>
+          <input class="string email required" id="user_email" maxlength="255" name="email" size="30" type="url">
+        </p>
+        <p class="field subscribe">
+          <input class="string required" id="subscribe" maxlength="255" name="subscribe" size="30" type="checkbox">
+          <label for="subscribe">Yes, I would like to be added to the Compressor Products International CPI newsletter!</label>
+        </p>
+        <p class="field comments">
+          <label for="comments">Comments<label>
+          <textarea class="text required" cols="60" id="comments" name="comments" rows="10"></textarea>
+        </p>
+        <input class="button" name="submit" type="submit" value="Create User">
+      </form>
+    </div>
+{% endblock %}
+

@@ -432,6 +432,66 @@ footer {
 
 /*________end product page styles*/
 
+/*_________contact us styles*/
+
+.contact-us #main p {
+  font-size: 14px;
+}
+.contact-us #main .article {
+  padding-left: 44px;
+}
+.contact-us #main .article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-us #main .address p {
+  color: gray;
+  font-size: 14px;
+  margin: 1px 0;
+}
+.contact-us #contact {
+  margin-top: 20px;
+}
+.contact-us #contact label {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  width: 135px;
+}
+.contact-us #contact span.required {
+  color: #ff0202;
+  position: relative;
+  top: 3px;
+}
+.contact-us #contact span.divider {
+  display: inline-block;
+  margin: 0 5px;
+}
+.contact-us #contact #first-name {
+  margin-right: 20px;
+}
+.contact-us #contact label.last-name {
+  width: 95px;
+}
+.contact-us #contact .subscribe {
+  margin-bottom: 30px;
+}
+.contact-us #contact .subscribe label {
+  width: auto;
+  margin-left: 7px;
+  font-weight: normal;
+}
+.contact-us #contact #comments {
+  border: 1px solid #C1C1C1;
+  background: -moz-linear-gradient(top, #EFEFEF, white 36px);
+  background: -ms-linear-gradient(top, #EFEFEF, white 36px);
+  background: -o-linear-gradient(top, #EFEFEF, white 36px);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(0.36, white));
+  background: -webkit-linear-gradient(top, #EFEFEF, white 36px);
+  background: linear-gradient(top, #EFEFEF, white 36px);
+}
+
+/*_________end contact us styles*/
 
 
 /*
