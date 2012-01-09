@@ -68,9 +68,9 @@ $(document).ready(function(){
     //to put text onto the image for banners
     //pulls it from an H1 within the banner container
     //this is mainly for demoing right now
-    var caption = $('.banner').find('h1');
-    var bannerImg = $('.banner').find('img');
-    caption.addClass('imageCaption60');
+    //var caption = $('.banner').find('h1');
+    //var bannerImg = $('.banner').find('img');
+    //caption.addClass('imageCaption60');
 });
 
 
