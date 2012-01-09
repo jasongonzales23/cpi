@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% block body_class %}contact-us sidebarMenu{% endblock %}
+{% block base_content %}
+    <div class="banner">
+        {% placeholder contact_us_banner %}
+    </div>
+    <div class="article">
+      {% placeholder header %}
+      <div class="address">
+        {% placeholder address %}
+      </div>
+      {% placeholder intro %}
+
+      <form accept-charset="UTF-8" action="/users" id="contact" method="post" novalidate="novalidate">
+        <p class="field">
+          <label for="first-name">First Name<span class="required">*</span></label>
+          <input class="required" id="first-name" name="" type="">
+          <label class="last-name" for="last-name">Last Name<span class="required">*</span></label>
+          <input class="required" id="last-name" name="" type="">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Company</label>
+          <input class="required" id="company" name="email" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Address</label>
+          <input class="required" id="address" name="email" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">City / State / Zip<span class="required">*</span></label>
+          <input class="required" id="city" name="email" type="text"><span class="divider">/</span>
+          <input class="required" id="state" name="email" type="text"><span class="divider">/</span>
+          <input class="required" id="zip" name="zip" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Country</label>
+          <input class="required" id="country" name="email" type="text">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Phone<span class="required">*</span></label>
+          <input class="required" id="user_email" name="email" type="phone">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Email<span class="required">*</span></label>
+          <input class="required" id="user_email" name="email" type="email">
+        </p>
+        <p class="field">
+          <label class="email" for="user_email">Url</label>
+          <input class="required" id="user_email" name="email" type="url">
+        </p>
+        <p class="field subscribe">
+          <input class="required" id="subscribe" name="subscribe" type="checkbox">
+          <label for="subscribe">Yes, I would like to be added to the Compressor Products International CPI newsletter!</label>
+        </p>
+        <p class="field comments">
+          <label for="comments">Comments<label>
+          <textarea class="text required" cols="60" id="comments" name="comments" rows="10"></textarea>
+        </p>
+        <input class="button" name="submit" type="submit" value="Submit">
+      </form>
+    </div>
+{% endblock %}
+

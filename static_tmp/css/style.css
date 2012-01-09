@@ -432,6 +432,128 @@ footer {
 
 /*________end product page styles*/
 
+/*_________contact us styles*/
+
+.contact-us #main p {
+  font-size: 14px;
+}
+.contact-us #main .article {
+  padding-left: 44px;
+}
+.contact-us #main .article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-us #main .address p {
+  color: gray;
+  font-size: 14px;
+  margin: 1px 0;
+}
+.contact-us #contact {
+  margin-top: 20px;
+}
+.contact-us #contact label {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  width: 135px;
+}
+.contact-us #contact input {
+  border: 1px solid #E0E0E0;
+  border-top: 1px solid #C1C1C1;
+  background: -moz-linear-gradient(top, #EFEFEF, white 20%);
+  background: -ms-linear-gradient(top, #EFEFEF, white 20%);
+  background: -o-linear-gradient(top, #EFEFEF, white 20%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(0.2, white));
+  background: -webkit-linear-gradient(top, #EFEFEF, white 20%);
+  background: linear-gradient(top, #EFEFEF, white 20%);
+}
+.contact-us #contact span.required {
+  color: #ff0202;
+  position: relative;
+  top: 3px;
+}
+.contact-us #contact span.divider {
+  display: inline-block;
+  margin: 5px;
+}
+.contact-us #contact #first-name {
+  margin-right: 20px;
+}
+.contact-us #contact label.last-name {
+  width: 95px;
+}
+.contact-us #contact #company,
+.contact-us #contact #address {
+  width: 415px;
+}
+.contact-us #contact #city,
+.contact-us #contact #state,
+.contact-us #contact #country {
+  width: 150px;
+}
+.contact-us #contact #zip {
+  width: 85px;
+}
+.contact-us #contact .subscribe {
+  margin-bottom: 30px;
+}
+.contact-us #contact .subscribe label {
+  width: auto;
+  margin-left: 7px;
+  font-weight: normal;
+}
+.contact-us #contact #comments {
+  border: 1px solid #C1C1C1;
+  background: -moz-linear-gradient(top, #EFEFEF, white 36px);
+  background: -ms-linear-gradient(top, #EFEFEF, white 36px);
+  background: -o-linear-gradient(top, #EFEFEF, white 36px);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(0.36, white));
+  background: -webkit-linear-gradient(top, #EFEFEF, white 36px);
+  background: linear-gradient(top, #EFEFEF, white 36px);
+}
+.contact-us #contact input[type=submit] {
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px white;
+  padding: 4px 35px;
+  border: 1px solid #D8D8D8;
+  -webkit-border-radius: 2px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+     -moz-border-radius: 2px; /* FF1-3.6 */
+          border-radius: 2px;
+  background: #b8b8bb;
+  background: -moz-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
+  background: -ms-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
+  background: -o-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.41, #E8E8E9), color-stop(0.5, #B8B8BB));
+  background: -webkit-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
+  background: linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
+  -webkit-box-shadow: 0px 0px 2px #e7e7e7; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 0px 0px 2px #e7e7e7; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 2px #e7e7e7; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+.contact-us #contact input[type=submit]:hover {
+  background: #e8e8e9;
+  background: -moz-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
+  background: -ms-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
+  background: -o-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.41, #E8E8E9), color-stop(0.5, #D6D6D7));
+  background: -webkit-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
+  background: linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
+}
+.contact-us #contact input[type=submit]:active {
+  background: #9F9FA3;
+  background: -moz-linear-gradient(top, #CECED0, #E8E8E9 30%);
+  background: -ms-linear-gradient(top, #CECED0, #E8E8E9 30%);
+  background: -o-linear-gradient(top, #CECED0, #E8E8E9 30%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#CECED0), color-stop(0.3, #E8E8E9));
+  background: -webkit-linear-gradient(top, #CECED0, #E8E8E9 30%);
+  background: linear-gradient(top, #CECED0, #E8E8E9 30%);
+  -webkit-box-shadow: inset 0px 1px 3px #9F9FA3; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: inset 0px 1px 3px #9F9FA3; /* FF3.5 - 3.6 */
+          box-shadow: inset 0px 1px 3px #9F9FA3; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+/*_________end contact us styles*/
 
 
 /*
