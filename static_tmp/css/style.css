@@ -433,6 +433,10 @@ footer {
 /*________end product page styles*/
 
 /*________form styles*/
+form label {
+  font-size: 16px;
+  font-weight: bold;
+}
 form input {
   border: 1px solid #E0E0E0;
   border-top: 1px solid #C1C1C1;
@@ -517,8 +521,6 @@ form input[type=submit]:active {
 }
 
 .contact-us #contact label {
-  font-size: 16px;
-  font-weight: bold;
   display: inline-block;
   width: 135px;
 }
@@ -583,12 +585,110 @@ form input[type=submit]:active {
 .news-search #search-news {
   margin-left: 44px;
 }
+
+.news-search #search-news .tertiaryNav {
+  margin: 0 15px 0 0;
+}
+
+.news-search #search-news .field {
+  margin-top: 0;
+}
+
+.news-search #search-news select,
+.news-search #search-news input {
+  font-size: 16px;
+}
+
+.news-search #search-news select {
+  max-width: 205px;
+}
+
 .news-search #search-news p.field {
   float: left;
 }
-.news-search input[type=submit] {
-  float: left;
+
+.news-search #search-news > fieldset {
+  margin-top: 30px;
 }
+
+.news-search #search-news .category label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.news-search #search-news .search-by {
+  margin-right: 10px;
+}
+
+.news-search #search-news .search-by label {
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.news-search #search-news .search {
+  margin-top: -4px;
+}
+
+.news-search #search-news .search input {
+  height: 24px;
+}
+
+.news-search #search-news .release-date label {
+  font-weight: normal;
+  position: relative;
+  top: 1px;
+}
+.news-search #search-news input[type=submit] {
+  float: left;
+  margin-top: -4px;
+}
+
+.news-search .results {
+  float: left;
+  width: 642px;
+}
+
+.news-search .results .summary {
+  float: left;
+  color: #a7a7aa;
+}
+
+.news-search .results .pagination {
+  margin-left: 200px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.news-search .pagination .previous_page {
+  color: #cccccc;
+}
+
+.news-search .pagination .current {
+  font-style: normal;
+  background: #EEE;
+}
+
+.news-search .pagination a,
+.news-search .pagination .current {
+  padding: 4px 8px;
+}
+
+.news-search .pagination a {
+  text-decoration: none;
+  color: #007b9b;
+  border: 1px solid transparent;
+}
+
+.news-search .pagination a:hover {
+  background: #E5FAFF;
+  border-color: #99EBFF;
+}
+
+.news-search #articles {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /*_________end news search styles*/
 
 
