@@ -1,0 +1,8 @@
+{% for slide in slideshow.slide_set.all %}
+    <img src="{{MEDIA_URL}}{{ slide.slide }}" alt="{{ slide.description }}"/>
+    <button>{{ slide.buttonText}}</button>
+{% endfor %}
+
+{% for slide in slideshow.slide_set.all %}
+<img src="{{MEDIA_URL}}{{ slide.thumbnail}}" alt="{{ slide.description }}"/>
+{% endfor %}
