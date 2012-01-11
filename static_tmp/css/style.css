@@ -689,6 +689,59 @@ form input[type=submit]:active {
   padding-left: 0;
 }
 
+.news-search .article {
+  margin: 25px 10px 0 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #DFDFDF;
+}
+
+.news-search .article a {
+  color: #2c9fb7;
+  font-weight: normal;
+}
+
+.news-search .article a:hover {
+  color: #006680;
+}
+
+.news-search .article .info {
+  float: right;
+}
+
+.news-search .article .info .release-date {
+  margin: 0 0 2px;
+}
+
+.news-search .article .info .buttons {
+  text-align: right;
+}
+
+.news-search .article .info .buttons > a {
+  padding-left: 5px;
+}
+
+.news-search .article h2 {
+  margin: 0 192px 0 0;
+}
+
+.news-search .article > p {
+  margin-bottom: 20px;
+}
+
+.news-search .article .author {
+  margin: 0 192px 0 0;
+}
+
+.news-search .article h2 a {
+  color: #2c9fb7;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.news-search .article .author {
+
+}
+
 /*_________end news search styles*/
 
 
