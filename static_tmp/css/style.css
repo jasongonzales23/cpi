@@ -41,6 +41,7 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 svg:not(:root) { overflow: hidden; }
 figure { margin: 0; }
+p, span {font-weight: normal;}
 
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
