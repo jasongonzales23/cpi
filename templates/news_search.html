@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% block body_class %}news-search sidebarMenu{% endblock %}
+{% block base_content %}
+  <div class="banner">
+      {% placeholder product_page_banner %}
+  </div>
+
+  <form action="/users" id="search-news" method="post" >
+    <fieldset>
+      <p class="field search-by">
+        <label for="search-by">Search By:</label>
+        <select name="template" id="id_template">
+          <option value="home.html">Show All</option>
+          <option value="INHERIT">Inherit the template of the nearest ancestor</option>
+        </select>
+      </p>
+      <p class="field search">
+        <input class="required" id="search" name="search" type="text" placeholder"Enter search terms here">
+      </p>
+      <input class="button" name="submit" type="submit" value="Search">
+    </fieldset>
+
+    <div class="tertiaryNav">
+      <p class="field category">
+        <label>Category</label>
+        <select name="template" id="id_template">
+          <option value="home.html">Show All</option>
+          <option value="INHERIT">Inherit the template of the nearest ancestor</option>
+        </select>
+      </p>
+      <p class="field release-date">
+        <input class="required" id="release-date" name="release-date" type="checkbox">
+        <label for="release-date">Search by release date<label>
+      </p>
+    </div>
+
+    <div class="results">
+      <nav>
+        <span class="summary" >Displaying Articles 1-6 of 23</span>
+        <div class="pagination">
+          <span class="previous_page disabled">Previous</span>
+          <em class="current">1</em>
+          <a href="/recipes?page=5">2</a>
+          <a class="next_page" rel="next" href="/recipes?page=2">Next</a>
+        </div>
+      </nav>
+
+      <ul id="articles">
+        <li class="article">
+          <div class="info">
+            <p class="release-date">Release Date: 15 Nov 11</p>
+            <div class="buttons">
+              <a href="#" class="print"><img src="/static/img/print-icon.jpg" /></a>
+              <a href="#"><img src="/static/img/rss-icon.jpg" /></a>
+            </div>
+          </div>
+          <h2>
+            <a href="#">New Job Opportunities in Asia & Middle East Due to Recent Global Expansion</a>
+          </h2>
+          <p class="author">Author or Contact: Ellen Mendelow</p>
+          <p>Due to our aggressive expansion, we are currently seeking locally based Sales Engineers to manage and develop our business in the following key areas: Korea Taiwan Malaysia Middle East</p>
+          <p>Categories - <a href="#">Recent News</a></p>
+        </li>
+        <li class="article">
+          <div class="info">
+            <p class="release-date">Release Date: 15 Nov 11</p>
+            <div class="buttons">
+              <a href="#" class="print"><img src="/static/img/print-icon.jpg" /></a>
+              <a href="#"><img src="/static/img/rss-icon.jpg" /></a>
+            </div>
+          </div>
+          <h2>
+            <a href="#">New Job Opportunities in Asia & Middle East Due to Recent Global Expansion</a>
+          </h2>
+          <p class="author">Author or Contact: Ellen Mendelow</p>
+          <p>Due to our aggressive expansion, we are currently seeking locally based Sales Engineers to manage and develop our business in the following key areas: Korea Taiwan Malaysia Middle East</p>
+          <p>Categories - <a href="#">Recent News</a></p>
+        </li>
+        <li class="article">
+          <div class="info">
+            <p class="release-date">Release Date: 15 Nov 11</p>
+            <div class="buttons">
+              <a href="#" class="print"><img src="/static/img/print-icon.jpg" /></a>
+              <a href="#"><img src="/static/img/rss-icon.jpg" /></a>
+            </div>
+          </div>
+          <h2>
+            <a href="#">New Job Opportunities in Asia & Middle East Due to Recent Global Expansion</a>
+          </h2>
+          <p class="author">Author or Contact: Ellen Mendelow</p>
+          <p>Due to our aggressive expansion, we are currently seeking locally based Sales Engineers to manage and develop our business in the following key areas: Korea Taiwan Malaysia Middle East</p>
+          <p>Categories - <a href="#">Recent News</a></p>
+        </li>
+      </ul>
+      <div class="pagination">
+        <span class="previous_page disabled">Previous</span>
+        <em class="current">1</em>
+        <a href="/recipes?page=5">2</a>
+        <a class="next_page" rel="next" href="/recipes?page=2">Next</a>
+      </div>
+    </div>
+  </form>
+{% endblock %}
+

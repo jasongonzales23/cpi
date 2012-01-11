@@ -369,6 +369,7 @@ h2 {
     background:#e4e4e4;
     border:1px solid #d6d6d6;
     float:left;
+    clear: both;
 }
 
 .tertiaryNav ul {
@@ -429,36 +430,14 @@ footer {
     width:295px;
     margin: 7px 12px;
 }
-
 /*________end product page styles*/
 
-/*_________contact us styles*/
-
-.contact-us #main p {
-  font-size: 14px;
-}
-.contact-us #main .article {
-  padding-left: 44px;
-}
-.contact-us #main .article h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.contact-us #main .address p {
-  color: gray;
-  font-size: 14px;
-  margin: 1px 0;
-}
-.contact-us #contact {
-  margin-top: 20px;
-}
-.contact-us #contact label {
+/*________form styles*/
+form label {
   font-size: 16px;
   font-weight: bold;
-  display: inline-block;
-  width: 135px;
 }
-.contact-us #contact input {
+form input {
   border: 1px solid #E0E0E0;
   border-top: 1px solid #C1C1C1;
   background: -moz-linear-gradient(top, #EFEFEF, white 20%);
@@ -468,51 +447,8 @@ footer {
   background: -webkit-linear-gradient(top, #EFEFEF, white 20%);
   background: linear-gradient(top, #EFEFEF, white 20%);
 }
-.contact-us #contact span.required {
-  color: #ff0202;
-  position: relative;
-  top: 3px;
-}
-.contact-us #contact span.divider {
-  display: inline-block;
-  margin: 5px;
-}
-.contact-us #contact #first-name {
-  margin-right: 20px;
-}
-.contact-us #contact label.last-name {
-  width: 95px;
-}
-.contact-us #contact #company,
-.contact-us #contact #address {
-  width: 415px;
-}
-.contact-us #contact #city,
-.contact-us #contact #state,
-.contact-us #contact #country {
-  width: 150px;
-}
-.contact-us #contact #zip {
-  width: 85px;
-}
-.contact-us #contact .subscribe {
-  margin-bottom: 30px;
-}
-.contact-us #contact .subscribe label {
-  width: auto;
-  margin-left: 7px;
-  font-weight: normal;
-}
-.contact-us #contact #comments {
-  border: 1px solid #C1C1C1;
-  background: -moz-linear-gradient(top, #EFEFEF, white 36px);
-  background: -ms-linear-gradient(top, #EFEFEF, white 36px);
-  background: -o-linear-gradient(top, #EFEFEF, white 36px);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(0.36, white));
-  background: -webkit-linear-gradient(top, #EFEFEF, white 36px);
-  background: linear-gradient(top, #EFEFEF, white 36px);
-}
-.contact-us #contact input[type=submit] {
+
+form input[type=submit] {
   font-size: 15px;
   font-weight: bold;
   text-shadow: 0 1px 1px white;
@@ -522,17 +458,19 @@ footer {
      -moz-border-radius: 2px; /* FF1-3.6 */
           border-radius: 2px;
   background: #b8b8bb;
-  background: -moz-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
-  background: -ms-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
-  background: -o-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
-  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.41, #E8E8E9), color-stop(0.5, #B8B8BB));
-  background: -webkit-linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
-  background: linear-gradient(top, #E8E8E9 41%, #B8B8BB 50%);
+  background: -moz-linear-gradient(top, #D9DADB 44%, #BABBBE 50%);
+  background: -ms-linear-gradient(top, #D9DADB 44%, #BABBBE 50%);
+  background: -o-linear-gradient(top, #D9DADB 44%, #BABBBE 50%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.44, #D9DADB), color-stop(0.5, #BABBBE));
+  background: -webkit-linear-gradient(top, #D9DADB 44%, #BABBBE 50%);
+  background: linear-gradient(top, #D9DADB 44%, #BABBBE 50%);
   -webkit-box-shadow: 0px 0px 2px #e7e7e7; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
      -moz-box-shadow: 0px 0px 2px #e7e7e7; /* FF3.5 - 3.6 */
           box-shadow: 0px 0px 2px #e7e7e7; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
 }
-.contact-us #contact input[type=submit]:hover {
+
+form input[type=submit]:hover {
+  border-color: #BFBFBF;
   background: #e8e8e9;
   background: -moz-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
   background: -ms-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
@@ -541,7 +479,9 @@ footer {
   background: -webkit-linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
   background: linear-gradient(top, #E8E8E9 41%, #D6D6D7 50%);
 }
-.contact-us #contact input[type=submit]:active {
+
+form input[type=submit]:active {
+  border-color: #999;
   background: #9F9FA3;
   background: -moz-linear-gradient(top, #CECED0, #E8E8E9 30%);
   background: -ms-linear-gradient(top, #CECED0, #E8E8E9 30%);
@@ -553,7 +493,256 @@ footer {
      -moz-box-shadow: inset 0px 1px 3px #9F9FA3; /* FF3.5 - 3.6 */
           box-shadow: inset 0px 1px 3px #9F9FA3; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
 }
+/*________end form styles*/
+
+/*_________contact us styles*/
+
+.contact-us #main p {
+  font-size: 14px;
+}
+
+.contact-us #main .article {
+  padding-left: 44px;
+}
+
+.contact-us #main .article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us #main .address p {
+  color: gray;
+  font-size: 14px;
+  margin: 1px 0;
+}
+
+.contact-us #contact {
+  margin-top: 20px;
+}
+
+.contact-us #contact label {
+  display: inline-block;
+  width: 135px;
+}
+
+.contact-us #contact span.required {
+  color: #ff0202;
+  position: relative;
+  top: 3px;
+}
+
+.contact-us #contact span.divider {
+  display: inline-block;
+  margin: 5px;
+}
+
+.contact-us #contact #first-name {
+  margin-right: 20px;
+}
+
+.contact-us #contact label.last-name {
+  width: 95px;
+}
+
+.contact-us #contact #company,
+.contact-us #contact #address {
+  width: 415px;
+}
+
+.contact-us #contact #city,
+.contact-us #contact #state,
+.contact-us #contact #country {
+  width: 150px;
+}
+
+.contact-us #contact #zip {
+  width: 85px;
+}
+
+.contact-us #contact .subscribe {
+  margin-bottom: 30px;
+}
+
+.contact-us #contact .subscribe label {
+  width: auto;
+  margin-left: 7px;
+  font-weight: normal;
+}
+
+.contact-us #contact #comments {
+  border: 1px solid #C1C1C1;
+  background: -moz-linear-gradient(top, #EFEFEF, white 36px);
+  background: -ms-linear-gradient(top, #EFEFEF, white 36px);
+  background: -o-linear-gradient(top, #EFEFEF, white 36px);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(0.36, white));
+  background: -webkit-linear-gradient(top, #EFEFEF, white 36px);
+  background: linear-gradient(top, #EFEFEF, white 36px);
+}
+
 /*_________end contact us styles*/
+
+/*_________news search styles*/
+.news-search #search-news {
+  margin-left: 44px;
+}
+
+.news-search #search-news .tertiaryNav {
+  margin: 0 15px 0 0;
+}
+
+.news-search #search-news .field {
+  margin-top: 0;
+}
+
+.news-search #search-news select,
+.news-search #search-news input {
+  font-size: 16px;
+}
+
+.news-search #search-news select {
+  max-width: 205px;
+}
+
+.news-search #search-news p.field {
+  float: left;
+}
+
+.news-search #search-news > fieldset {
+  margin-top: 30px;
+}
+
+.news-search #search-news .category label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.news-search #search-news .search-by {
+  margin-right: 10px;
+}
+
+.news-search #search-news .search-by label {
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.news-search #search-news .search {
+  margin-top: -4px;
+}
+
+.news-search #search-news .search input {
+  height: 24px;
+}
+
+.news-search #search-news .release-date label {
+  font-weight: normal;
+  position: relative;
+  top: 1px;
+}
+.news-search #search-news input[type=submit] {
+  float: left;
+  margin-top: -4px;
+}
+
+.news-search .results {
+  float: left;
+  width: 642px;
+}
+
+.news-search .results .summary {
+  float: left;
+  color: #a7a7aa;
+}
+
+.news-search .results .pagination {
+  margin-left: 200px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.news-search .pagination .previous_page {
+  color: #cccccc;
+}
+
+.news-search .pagination .current {
+  font-style: normal;
+  background: #EEE;
+}
+
+.news-search .pagination a,
+.news-search .pagination .current {
+  padding: 4px 8px;
+}
+
+.news-search .pagination a {
+  text-decoration: none;
+  color: #007b9b;
+  border: 1px solid transparent;
+}
+
+.news-search .pagination a:hover {
+  background: #E5FAFF;
+  border-color: #99EBFF;
+}
+
+.news-search #articles {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-search .article {
+  margin: 25px 10px 0 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #DFDFDF;
+}
+
+.news-search .article a {
+  color: #2c9fb7;
+  font-weight: normal;
+}
+
+.news-search .article a:hover {
+  color: #006680;
+}
+
+.news-search .article .info {
+  float: right;
+}
+
+.news-search .article .info .release-date {
+  margin: 0 0 2px;
+}
+
+.news-search .article .info .buttons {
+  text-align: right;
+}
+
+.news-search .article .info .buttons > a {
+  padding-left: 5px;
+}
+
+.news-search .article h2 {
+  margin: 0 192px 0 0;
+}
+
+.news-search .article > p {
+  margin-bottom: 20px;
+}
+
+.news-search .article .author {
+  margin: 0 192px 0 0;
+}
+
+.news-search .article h2 a {
+  color: #2c9fb7;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.news-search .article .author {
+
+}
+
+/*_________end news search styles*/
 
 
 /*
