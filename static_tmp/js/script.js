@@ -71,6 +71,11 @@ $(document).ready(function(){
     //var caption = $('.banner').find('h1');
     //var bannerImg = $('.banner').find('img');
     //caption.addClass('imageCaption60');
+    //
+    $('#slider').nivoSlider({
+      controlNavThumbs: true,
+      directionNavHide: false
+    });
 });
 
 
