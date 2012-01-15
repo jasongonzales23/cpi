@@ -72,10 +72,6 @@ $(document).ready(function(){
     //var bannerImg = $('.banner').find('img');
     //caption.addClass('imageCaption60');
     //
-    $('#slider').nivoSlider({
-      controlNavThumbs: true,
-      directionNavHide: false
-    });
 });
 
 
