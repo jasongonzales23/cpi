@@ -72,6 +72,10 @@ $(document).ready(function(){
     //var bannerImg = $('.banner').find('img');
     //caption.addClass('imageCaption60');
     //
+    $('.flexslider').flexslider({
+      manualControls: '.custom-controls li a',
+      controlsContainer: '.flex-container'
+    });
 });
 
 

@@ -1,8 +1,45 @@
-{% for slide in slideshow.slide_set.all %}
-    <img src="{{MEDIA_URL}}{{ slide.slide }}" alt="{{ slide.description }}"/>
-    <button>{{ slide.buttonText}}</button>
-{% endfor %}
-
-{% for slide in slideshow.slide_set.all %}
-<img src="{{MEDIA_URL}}{{ slide.thumbnail}}" alt="{{ slide.description }}"/>
-{% endfor %}
+<div class="flex-container">
+  <div class="flexslider">
+    <ul class="slides">
+      {% for slide in slideshow.slide_set.all %}
+        <li>
+          {# TODO: each slide should link to something right? #}
+          {# TODO: output that path on this tag and probably on the cta below #}
+          <a href="#">
+            <img src="{{MEDIA_URL}}{{ slide.slide }}" alt="{{ slide.description }}"/>
+          </a>
+          <div class="slide-text">
+            {# TODO: if slide.description or slide.something #}
+              <h2>
+                {% if slide.description %}
+                  <span class="description">{{ slide.description}}</span>
+                {% endif %}
+                {# TODO: if slide.something #}
+                  <span class="product">PLACEHOLDER</span>
+              </h2>
+            {# TODO: endif #}
+            {# TODO: if slide.caption #}
+              <p class="caption">
+              {# TODO: make this a property of the slide #}
+                Butterflyfish yellowtail snapper sand knifefish 
+                Russian sturgeon jellynose fish jewelfish rough 
+                pomfret; yellowtail barracuda. Slickhead electric knifefish 
+              </p>
+            {% if slide.buttonText %}
+              <a href="#" class="cta">{{ slide.buttonText}}</a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <ul class="custom-controls">
+    {% for slide in slideshow.slide_set.all %}
+      <li>
+        <a href="#">
+          <img src="{{MEDIA_URL}}{{ slide.thumbnail}}" alt="{{ slide.description }}"/>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
