@@ -571,7 +571,13 @@ form input[type=submit]:active {
   font-weight: normal;
 }
 
-.contact-us #contact #comments {
+.contact-us #contact .content label{
+    display:block;
+    margin:0 0 5px 0;
+}
+
+.contact-us #contact textarea {
+    width:590px;
   border: 1px solid #C1C1C1;
   background: -moz-linear-gradient(top, #EFEFEF, white 36px);
   background: -ms-linear-gradient(top, #EFEFEF, white 36px);
@@ -579,6 +585,15 @@ form input[type=submit]:active {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(0.36, white));
   background: -webkit-linear-gradient(top, #EFEFEF, white 36px);
   background: linear-gradient(top, #EFEFEF, white 36px);
+}
+
+p.error input {
+    border:1px solid #FF0202;
+    background:#FFC3D1;
+}
+
+.contact-us #contact .error_msg {
+    color: #FF0202;
 }
 
 /*_________end contact us styles*/
