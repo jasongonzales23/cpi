@@ -1,0 +1,13 @@
+Hello, the following information was just submitted from the CPI contact form:
+First Name: {{ data.first_name }}
+Last Name: {{ data.last_name }}
+Email: {{ data.email }}
+Phone: {{ data.phone }}
+Company: {{ data.company }}
+City: {{ data.city }}
+State: {{ data.state }}
+Postal code: {{ data.postal_code }}
+Country: {{ data.country }}
+Company site: {{ data.company_site }}
+Comment: {{ data.content }}
+
