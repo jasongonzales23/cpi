@@ -497,6 +497,11 @@ form input[type=submit]:active {
 }
 /*________end form styles*/
 
+/*_________home styles*/
+.home .flex-container.visual-nav {
+  margin-top: 54px;
+}
+
 /*_________contact us styles*/
 
 .contact-us #main p {
@@ -871,6 +876,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container {
   width: 914px;
   margin-left: 47px;
+  overflow: visible;
 }
 
 .flexslider {
@@ -913,6 +919,81 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   display: inline-block;
   padding: 4px;
   border: 1px solid #cacaca;
+}
+
+/* visual nav slide theme */
+.flex-container.visual-nav {
+  background: #e1e1e1;
+  border: 1px solid #d1d1d1;
+}
+
+.flex-container.visual-nav .custom-controls {
+  height: 122px;
+  margin-top: 7px;
+}
+
+.flex-container.visual-nav .custom-controls li {
+  float: left;
+  width: 78px;
+  height: 110px;
+  margin: 0 2px 0 7px;
+  background: url(../img/icons/oil-icon.png) -1px 0;
+  background-repeat: no-repeat;
+}
+
+.flex-container.visual-nav .custom-controls li a {
+  border: none;
+  display: block;
+  height: 100%;
+  padding: 0;
+}
+
+.flex-container.visual-nav .custom-controls li a.active {
+  background: transparent;
+}
+
+.flex-container.visual-nav .custom-controls li a span {
+  margin-top: 85px;
+  display: inline-block;
+  text-decoration: none;
+  color: #464646;
+  font-weight: 200;
+}
+
+.flex-container.visual-nav .custom-controls li.wrench {
+  background-image: url(../img/icons/wrench.png);
+}
+
+.flex-container.visual-nav .custom-controls li.info {
+  background-image: url(../img/icons/info.png);
+}
+
+.flex-container.visual-nav .custom-controls li.sealing {
+  background-image: url(../img/icons/sealing.png);
+}
+
+.flex-container.visual-nav .custom-controls li:hover {
+  background-position: -80px 0;
+}
+
+.flex-container.visual-nav .flexslider {
+  padding: 0;
+  border: none;
+}
+
+.flex-container.visual-nav ul.slides li > .slide-text {
+  left: 390px;
+  text-align: right;
+}
+
+.flex-container.visual-nav ul.slides li .slide-text p.caption {
+  width: auto;
+  margin-left: 155px;
+}
+
+.flex-container.visual-nav .flex-direction-nav {
+  /* no arrows on the sides */
+  display: none;
 }
 
 /* styles for stuff in slides */
