@@ -313,6 +313,7 @@ h2 {
 .secondary-nav .language:hover .langs {
     display: block;
     position: absolute;
+    z-index: 1;
     border-bottom:1px solid #404040;
     background: #333;
     /*margin-left: -15px;*/ /*in case they want me top pull it left*/
