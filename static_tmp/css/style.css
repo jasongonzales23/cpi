@@ -924,11 +924,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 /* visual nav slide theme */
 .flex-container.visual-nav {
   background: #e1e1e1;
+  width: 936px;
   border: 1px solid #d1d1d1;
 }
 
 .flex-container.visual-nav .custom-controls {
-  height: 122px;
+  height: 102px;
   margin-top: 7px;
 }
 
@@ -953,11 +954,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 }
 
 .flex-container.visual-nav .custom-controls li a span {
-  margin-top: 85px;
+  margin: 79px 0 0 4px;
   display: inline-block;
   text-decoration: none;
   color: #464646;
   font-weight: 200;
+  font-size: 12px;
 }
 
 .flex-container.visual-nav .custom-controls li.wrench {
@@ -982,14 +984,32 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 }
 
 .flex-container.visual-nav ul.slides li > .slide-text {
-  left: 390px;
-  text-align: right;
+  top: 23px;
+  left: 632px;
+  width: 293px;
+}
+
+.flex-container.visual-nav ul.slides li .slide-text h2 {
+  margin-bottom: 2px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: none;
 }
 
 .flex-container.visual-nav ul.slides li .slide-text p.caption {
   width: auto;
-  margin-left: 155px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 16px;
 }
+
+.flex-container.visual-nav ul.slides li .slide-text a.learn-more {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00a6ca;
+}
+
 
 .flex-container.visual-nav .flex-direction-nav {
   /* no arrows on the sides */
