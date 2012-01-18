@@ -23,56 +23,42 @@
     <div class="flexslider">
       <ul class="slides">
         <li>
-          <a href="#"><img src="{{STATIC_URL}}img/home/slide1.jpg" alt=""/></a>
+          <img src="{{STATIC_URL}}img/home/slide1.jpg" alt=""/>
           <div class="slide-text">
-            <h2>Sealing Components</h2>
+            <h2>{% placeholder slide1_header %}</h2>
             <p class="caption">
-              Innovative product development is a cornerstone of our success.
-              For every application, we ensure the optimal design and manufacture 
-              our products internally using only the highest quality proprietary 
-              materials. The result is products that help our customers achieve greater 
-              efficiencies in the safe operation of their compressors.
+              {% placeholder slide1_text %}
             </p>
-            <a href="#" class="">>> Learn More<a>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide1_link %}</a>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/home/slide2.jpg" alt=""/>
+          <div class="slide-text">
+            <h2>{% placeholder slide2_header %}</h2>
+            <p class="caption">
+              {% placeholder slide2_text %}
+            </p>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide2_link %}</a>
           </div>
         </li>
         <li>
-          <a href="#"><img src="{{STATIC_URL}}img/home/slide2.jpg" alt=""/></a>
+          <img src="{{STATIC_URL}}img/home/slide3.jpg" alt=""/>
           <div class="slide-text">
-            <h2>
-              <span class="">PLACEHOLDER</span>
-            </h2>
+            <h2>{% placeholder slide3_header %}</h2>
             <p class="caption">
-              Russian sturgeon jellynose fish jewelfish rough 
-              pomfret; yellowtail barracuda. Slickhead electric knifefish 
+              {% placeholder slide3_text %}
             </p>
-            <a href="#" class="">{{ slide.buttonText}}</a>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide3_link %}</a>
           </div>
         </li>
         <li>
-          <a href="#"><img src="{{STATIC_URL}}img/home/slide3.jpg" alt=""/></a>
+          <img src="{{STATIC_URL}}img/home/slide4.jpg" alt=""/>
           <div class="slide-text">
-            <h2>
-              <span class="">PLACEHOLDER</span>
-            </h2>
+            <h2>{% placeholder slide4_header %}</h2>
             <p class="caption">
-              Russian sturgeon jellynose fish jewelfish rough 
-              pomfret; yellowtail barracuda. Slickhead electric knifefish 
+              {% placeholder slide4_text %}
             </p>
-            <a href="#" class="">{{ slide.buttonText}}</a>
-          </div>
-        </li>
-        <li>
-          <a href="#"><img src="{{STATIC_URL}}img/home/slide4.jpg" alt=""/></a>
-          <div class="slide-text">
-            <h2>
-              <span class="">PLACEHOLDER</span>
-            </h2>
-            <p class="caption">
-              Russian sturgeon jellynose fish jewelfish rough 
-              pomfret; yellowtail barracuda. Slickhead electric knifefish 
-            </p>
-            <a href="#" class="">{{ slide.buttonText}}</a>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide4_link %}</a>
           </div>
         </li>
       </ul>
