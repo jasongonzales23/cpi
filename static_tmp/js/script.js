@@ -79,7 +79,7 @@ $(document).ready(function(){
 
     $('div.flex-container.visual-nav .flexslider').flexslider({
       slideshow: false,
-      manualControls: '.custom-controls li a',
+      manualControls: '.custom-controls li',
       controlsContainer: '.flex-container'
     });
 });
