@@ -529,29 +529,34 @@ form input[type=submit]:active {
   color: #00a6ca;
 }
 
+
+/*_________lubrication styles*/
+.sealing .flex-container.visual-nav,
 .lubrication .flex-container.visual-nav {
   margin: 25px 0 0 44px;
   width: 933px;
 }
-
-
-/*_________lubrication styles*/
+.sealing .flexslider ul.slides li > .slide-text,
 .lubrication .flexslider ul.slides li > .slide-text {
   width: auto;
   position: static;
   margin-top: 20px;
 }
+.sealing .flexslider ul.slides .slide-text .overview,
 .lubrication .flexslider ul.slides .slide-text .overview {
   float: left;
   width: 465px;
   margin-right: 15px;
 }
+.sealing .flexslider ul.slides .slide-text .components,
 .lubrication .flexslider ul.slides .slide-text .components {
   margin-left: 470px;
 }
+.sealing .flexslider ul.slides .slide-text .components p,
 .lubrication .flexslider ul.slides .slide-text .components p {
   margin-bottom: 0;
 }
+.sealing .flexslider ul.slides .slide-text .components a,
 .lubrication .flexslider ul.slides .slide-text .components a {
   display: inline-block;
   color: black;
@@ -560,10 +565,12 @@ form input[type=submit]:active {
   padding: 1px 2px;
   text-indent: -2px;
 }
+.sealing .flexslider ul.slides .slide-text .components a:hover,
 .lubrication .flexslider ul.slides .slide-text .components a:hover {
   color: white;
   background: #00a6ca;
 }
+.sealing .flexslider ul.slides li .slide-text h2,
 .lubrication .flexslider ul.slides li .slide-text h2 {
   color: black;
   font-weight: bold;
@@ -571,6 +578,7 @@ form input[type=submit]:active {
   text-transform: none;
   margin-bottom: 0;
 }
+.sealing .flexslider ul.slides li .slide-text p,
 .lubrication .flexslider ul.slides li .slide-text p {
   margin-top: 0;
 }

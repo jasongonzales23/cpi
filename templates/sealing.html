@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block body_class %}sealing{% endblock %}
+
+{% block base_content %}
+  <div class="banner">
+    {% placeholder banner %}
+  </div>
+
+  <div class="flex-container visual-nav">
+    <ul class="custom-controls">
+      <li class="info">
+        <a href="#"><span>Overview</span></a>
+      </li>
+      <li class="">
+        <a href="#"><span>Compressor Valves</span></a>
+      </li>
+      <li class="sealing">
+        <a href="#"><span>Piston & Rods</span></a>
+      </li>
+      <li class="wrench">
+        <a href="#"><span>Piston Rings & Rider Rings</span></a>
+      </li>
+      <li class="info">
+        <a href="#"><span>Packing Rings</span></a>
+      </li>
+      <li class="">
+        <a href="#"><span>Packing Cases</span></a>
+      </li>
+      <li class="sealing">
+        <a href="#"><span>Oil Wiper Rings</span></a>
+      </li>
+    </ul>
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide1.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide1_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide1_components %}
+            </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide2.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide2_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide2_components %}
+            </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide3.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide3_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide3_components %}
+            </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide4.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide4_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide4_components %}
+            </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide5.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide5_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide5_components %}
+            </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide6.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide6_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide6_components %}
+            </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/sealing/slide7.jpg" alt=""/>
+          <div class="slide-text">
+            <div class="overview">
+              {% placeholder slide7_overview %}
+            </div>
+            <div class="components">
+              {% placeholder slide7_components %}
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
+
