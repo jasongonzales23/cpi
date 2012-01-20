@@ -72,8 +72,14 @@ $(document).ready(function(){
     //var bannerImg = $('.banner').find('img');
     //caption.addClass('imageCaption60');
     //
-    $('.flexslider').flexslider({
+    $('div.flex-container:not(".visual-nav") .flexslider').flexslider({
       manualControls: '.custom-controls li a',
+      controlsContainer: '.flex-container'
+    });
+
+    $('div.flex-container.visual-nav .flexslider').flexslider({
+      slideshow: false,
+      manualControls: '.custom-controls li',
       controlsContainer: '.flex-container'
     });
 });

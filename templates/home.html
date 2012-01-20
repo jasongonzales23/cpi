@@ -1,9 +1,67 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% block body_class %}home{% endblock %}
 
 {% block base_content %}
 	{% placeholder home_slideShow %}
-    <div class="visualNav">
-	{% placeholder home_content %}
+
+  <div class="flex-container visual-nav">
+    <ul class="custom-controls">
+      <li class="info">
+        <a href="#"><span>Overview</span></a>
+      </li>
+      <li>
+        <a href="#"><span>Lubrication</span></a>
+      </li>
+      <li class="sealing">
+        <a href="#"><span>Sealing Components</span></a>
+      </li>
+      <li class="wrench">
+        <a href="#"><span>Services</span></a>
+      </li>
+    </ul>
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="{{STATIC_URL}}img/home/slide1.jpg" alt=""/>
+          <div class="slide-text">
+            <h2>{% placeholder slide1_header %}</h2>
+            <p class="caption">
+              {% placeholder slide1_text %}
+            </p>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide1_link %}</a>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/home/slide2.jpg" alt=""/>
+          <div class="slide-text">
+            <h2>{% placeholder slide2_header %}</h2>
+            <p class="caption">
+              {% placeholder slide2_text %}
+            </p>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide2_link %}</a>
+          </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/home/slide3.jpg" alt=""/>
+          <div class="slide-text">
+            <h2>{% placeholder slide3_header %}</h2>
+            <p class="caption">
+              {% placeholder slide3_text %}
+            </p>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide3_link %}</a>
+          </div>
+        </li>
+        <li>
+          <img src="{{STATIC_URL}}img/home/slide4.jpg" alt=""/>
+          <div class="slide-text">
+            <h2>{% placeholder slide4_header %}</h2>
+            <p class="caption">
+              {% placeholder slide4_text %}
+            </p>
+            <a href="#PLACEHOLDER" class="learn-more">{% placeholder slide4_link %}</a>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 {% endblock %}

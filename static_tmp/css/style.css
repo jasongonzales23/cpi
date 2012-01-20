@@ -498,6 +498,92 @@ form input[type=submit]:active {
 }
 /*________end form styles*/
 
+/*_________home styles*/
+.home .flex-container.visual-nav {
+  margin-top: 54px;
+}
+
+.home .flex-container.visual-nav ul.slides li > .slide-text {
+  top: 23px;
+  left: 632px;
+  width: 293px;
+}
+
+.home .flex-container.visual-nav ul.slides li .slide-text h2 {
+  margin-bottom: 2px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: none;
+}
+
+.home .flex-container.visual-nav ul.slides li .slide-text p.caption {
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 16px;
+}
+
+.home .flex-container.visual-nav ul.slides li .slide-text a.learn-more {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00a6ca;
+}
+
+
+/*_________lubrication styles*/
+.sealing .flex-container.visual-nav,
+.lubrication .flex-container.visual-nav {
+  margin: 25px 0 0 44px;
+  width: 933px;
+}
+.sealing .flexslider ul.slides li > .slide-text,
+.lubrication .flexslider ul.slides li > .slide-text {
+  width: auto;
+  position: static;
+  margin-top: 20px;
+}
+.sealing .flexslider ul.slides .slide-text .overview,
+.lubrication .flexslider ul.slides .slide-text .overview {
+  float: left;
+  width: 465px;
+  margin-right: 15px;
+}
+.sealing .flexslider ul.slides .slide-text .components,
+.lubrication .flexslider ul.slides .slide-text .components {
+  margin-left: 470px;
+}
+.sealing .flexslider ul.slides .slide-text .components p,
+.lubrication .flexslider ul.slides .slide-text .components p {
+  margin-bottom: 0;
+}
+.sealing .flexslider ul.slides .slide-text .components a,
+.lubrication .flexslider ul.slides .slide-text .components a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 1px 2px;
+  text-indent: -2px;
+}
+.sealing .flexslider ul.slides .slide-text .components a:hover,
+.lubrication .flexslider ul.slides .slide-text .components a:hover {
+  color: white;
+  background: #00a6ca;
+}
+.sealing .flexslider ul.slides li .slide-text h2,
+.lubrication .flexslider ul.slides li .slide-text h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: none;
+  margin-bottom: 0;
+}
+.sealing .flexslider ul.slides li .slide-text p,
+.lubrication .flexslider ul.slides li .slide-text p {
+  margin-top: 0;
+}
+
 /*_________contact us styles*/
 
 .contact-us #main p {
@@ -872,6 +958,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container {
   width: 914px;
   margin-left: 47px;
+  overflow: visible;
 }
 
 .flexslider {
@@ -914,6 +1001,83 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   display: inline-block;
   padding: 4px;
   border: 1px solid #cacaca;
+}
+
+/* visual nav slide theme */
+.flex-container.visual-nav {
+  width: 936px;
+}
+
+.flex-container.visual-nav .slides li > img {
+  border: 1px solid #D1D1D1;
+  border-top: none;
+}
+
+.flex-container.visual-nav .custom-controls {
+  height: 102px;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 13px;
+  border: 1px solid #D1D1D1;
+  border-bottom: none;
+  background: #E1E1E1;
+}
+
+.flex-container.visual-nav .custom-controls li {
+  float: left;
+  width: 78px;
+  height: 110px;
+  margin: 0 2px 0 7px;
+  background: url(../img/icons/oil-icon.png) -1px 0;
+  background-repeat: no-repeat;
+}
+
+.flex-container.visual-nav .custom-controls li a {
+  border: none;
+  display: block;
+  height: 100%;
+  padding: 0;
+}
+
+.flex-container.visual-nav .custom-controls li a.active {
+  background: transparent;
+}
+
+.flex-container.visual-nav .custom-controls li a span {
+  margin: 79px 0 0 4px;
+  display: inline-block;
+  text-decoration: none;
+  color: #464646;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+.flex-container.visual-nav .custom-controls li.wrench {
+  background-image: url(../img/icons/wrench.png);
+}
+
+.flex-container.visual-nav .custom-controls li.info {
+  background-image: url(../img/icons/info.png);
+}
+
+.flex-container.visual-nav .custom-controls li.sealing {
+  background-image: url(../img/icons/sealing.png);
+}
+
+.flex-container.visual-nav .custom-controls li.active,
+.flex-container.visual-nav .custom-controls li:hover {
+  background-position: -80px 0;
+}
+
+.flex-container.visual-nav .flexslider {
+  padding: 0;
+  border: none;
+  width: 931px;
+}
+
+.flex-container.visual-nav .flex-direction-nav {
+  /* no arrows on the sides */
+  display: none;
 }
 
 /* styles for stuff in slides */
