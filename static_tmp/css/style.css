@@ -529,6 +529,51 @@ form input[type=submit]:active {
   color: #00a6ca;
 }
 
+.lubrication .flex-container.visual-nav {
+  margin: 25px 0 0 44px;
+  width: 933px;
+}
+
+
+/*_________lubrication styles*/
+.lubrication .flexslider ul.slides li > .slide-text {
+  width: auto;
+  position: static;
+  margin-top: 20px;
+}
+.lubrication .flexslider ul.slides .slide-text .overview {
+  float: left;
+  width: 465px;
+  margin-right: 15px;
+}
+.lubrication .flexslider ul.slides .slide-text .components {
+  margin-left: 470px;
+}
+.lubrication .flexslider ul.slides .slide-text .components p {
+  margin-bottom: 0;
+}
+.lubrication .flexslider ul.slides .slide-text .components a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 1px 2px;
+  text-indent: -2px;
+}
+.lubrication .flexslider ul.slides .slide-text .components a:hover {
+  color: white;
+  background: #00a6ca;
+}
+.lubrication .flexslider ul.slides li .slide-text h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: none;
+  margin-bottom: 0;
+}
+.lubrication .flexslider ul.slides li .slide-text p {
+  margin-top: 0;
+}
 
 /*_________contact us styles*/
 
@@ -951,14 +996,22 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 /* visual nav slide theme */
 .flex-container.visual-nav {
-  background: #e1e1e1;
   width: 936px;
-  border: 1px solid #d1d1d1;
+}
+
+.flex-container.visual-nav .slides li > img {
+  border: 1px solid #D1D1D1;
+  border-top: none;
 }
 
 .flex-container.visual-nav .custom-controls {
   height: 102px;
-  margin-top: 7px;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 13px;
+  border: 1px solid #D1D1D1;
+  border-bottom: none;
+  background: #E1E1E1;
 }
 
 .flex-container.visual-nav .custom-controls li {
@@ -987,7 +1040,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   text-decoration: none;
   color: #464646;
   font-weight: 200;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .flex-container.visual-nav .custom-controls li.wrench {
@@ -1010,6 +1063,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container.visual-nav .flexslider {
   padding: 0;
   border: none;
+  width: 931px;
 }
 
 .flex-container.visual-nav .flex-direction-nav {
