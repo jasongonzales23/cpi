@@ -6,28 +6,25 @@
           {# TODO: each slide should link to something right? #}
           {# TODO: output that path on this tag and probably on the cta below #}
           <a href="#">
-            <img src="{{MEDIA_URL}}{{ slide.slide }}" alt="{{ slide.description }}"/>
+            <img src="{{MEDIA_URL}}{{ slide.slide }}" alt="{{ slide.caption }}"/>
           </a>
-          <div class="slide-text">
-            {# TODO: if slide.description or slide.something #}
-              <h2>
-                {% if slide.description %}
-                  <span class="description">{{ slide.description}}</span>
+          <div class="slide-text {{slide.headingColor}}">
+		<h2>
+                {% if slide.heading_1 %}
+                  <span class="description">{{ slide.heading_1}}</span>
                 {% endif %}
-                {# TODO: if slide.something #}
-                  <span class="product">PLACEHOLDER</span>
-              </h2>
-            {# TODO: endif #}
-            {# TODO: if slide.caption #}
-              <p class="caption">
-              {# TODO: make this a property of the slide #}
-                Butterflyfish yellowtail snapper sand knifefish 
-                Russian sturgeon jellynose fish jewelfish rough 
-                pomfret; yellowtail barracuda. Slickhead electric knifefish 
-              </p>
-            {% if slide.buttonText %}
-              <a href="#" class="cta">{{ slide.buttonText}}</a>
-            {% endif %}
+                {% if slide.heading_2 %}
+                  <span class="product">{{ slide.heading_2}}</</span>
+		</h2>
+		{% endif %}
+		{% if slide.caption %}
+		<p class="caption {{ slide.captionColor }}">
+		{{ slide.caption }}
+		</p>
+		{% endif %}
+		{% if slide.buttonText %}
+		  <a href="/{{ slide.buttonLink }}/" class="cta">{{slide.buttonText}}</a>
+		{% endif %}
           </div>
         </li>
       {% endfor %}
@@ -37,7 +34,7 @@
     {% for slide in slideshow.slide_set.all %}
       <li>
         <a href="#">
-          <img src="{{MEDIA_URL}}{{ slide.thumbnail}}" alt="{{ slide.description }}"/>
+          <img src="{{MEDIA_URL}}{{ slide.thumbnail}}" alt="{{ slide.caption }}"/>
         </a>
       </li>
     {% endfor %}

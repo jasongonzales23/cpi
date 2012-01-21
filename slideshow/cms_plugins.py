@@ -1,7 +1,11 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
+from slideshow.models import Slideshow, Slide
 from slideshow.models import SlideshowPlugin as SlideshowPluginModel
 from django.utils.translation import ugettext as _
+
+import admin
+
 
 class SlideshowPlugin(CMSPluginBase):
     model = SlideshowPluginModel

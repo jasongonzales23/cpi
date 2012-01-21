@@ -19,10 +19,16 @@ class Migration(SchemaMigration):
         db.create_table('slideshow_slide', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('slideshow', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['slideshow.Slideshow'])),
+            ('order', self.gf('django.db.models.fields.IntegerField')()),
             ('slide', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
             ('thumbnail', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
-            ('description', self.gf('django.db.models.fields.CharField')(max_length=60)),
-            ('buttonText', self.gf('django.db.models.fields.CharField')(max_length=255)),
+            ('heading_1', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
+            ('heading_2', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
+            ('headingColor', self.gf('django.db.models.fields.CharField')(max_length=20)),
+            ('caption', self.gf('django.db.models.fields.TextField')(max_length=255, blank=True)),
+            ('captionColor', self.gf('django.db.models.fields.CharField')(max_length=20)),
+            ('buttonText', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
+            ('buttonLink', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
         ))
         db.send_create_signal('slideshow', ['Slide'])
 
@@ -69,9 +75,15 @@ class Migration(SchemaMigration):
         },
         'slideshow.slide': {
             'Meta': {'object_name': 'Slide'},
-            'buttonText': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
-            'description': ('django.db.models.fields.CharField', [], {'max_length': '60'}),
+            'buttonLink': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
+            'buttonText': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
+            'caption': ('django.db.models.fields.TextField', [], {'max_length': '255', 'blank': 'True'}),
+            'captionColor': ('django.db.models.fields.CharField', [], {'max_length': '20'}),
+            'headingColor': ('django.db.models.fields.CharField', [], {'max_length': '20'}),
+            'heading_1': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
+            'heading_2': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'order': ('django.db.models.fields.IntegerField', [], {}),
             'slide': ('django.db.models.fields.files.ImageField', [], {'max_length': '100'}),
             'slideshow': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['slideshow.Slideshow']"}),
             'thumbnail': ('django.db.models.fields.files.ImageField', [], {'max_length': '100'})
