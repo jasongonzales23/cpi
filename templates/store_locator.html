@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block body_class %}store-locator{% endblock %}
+
+{% block base_content %}
+    <div class="banner">
+    {% placeholder banner %}
+    </div>
+    <div class="map-description">
+    {% placeholder map_description_text %}
+    </div>
+    {% placeholder map %}
+    <div class="locations">
+    {% placeholder locations %}
+    </div>
+{% endblock %}

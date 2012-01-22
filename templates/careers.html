@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block body_class %}careers{% endblock %}
+
+{% block base_content %}
+    {% placeholder home_slideShow %}
+    <div class="careerContent">
+    {% placeholder heading %}
+    {% placeholder video %}
+    </div>
+{% endblock %}

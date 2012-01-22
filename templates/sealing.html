@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% load menu_tags %}
 {% block body_class %}sealing{% endblock %}
 
 {% block base_content %}
@@ -41,6 +42,11 @@
             </div>
             <div class="components">
               {% placeholder slide1_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
         <li>
@@ -51,6 +57,11 @@
             </div>
             <div class="components">
               {% placeholder slide2_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
         <li>
@@ -61,6 +72,11 @@
             </div>
             <div class="components">
               {% placeholder slide3_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
         <li>
@@ -71,6 +87,11 @@
             </div>
             <div class="components">
               {% placeholder slide4_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
         <li>
@@ -81,6 +102,11 @@
             </div>
             <div class="components">
               {% placeholder slide5_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
         <li>
@@ -91,6 +117,11 @@
             </div>
             <div class="components">
               {% placeholder slide6_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
         <li>
@@ -101,6 +132,11 @@
             </div>
             <div class="components">
               {% placeholder slide7_components %}
+		<div class="visualTertiaryNav">
+		    <ul>
+			{% show_sub_menu 1%}
+		    </ul>
+		</div>
             </div>
         </li>
       </ul>

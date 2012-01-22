@@ -6,8 +6,10 @@
   <div class="banner">
       {% placeholder product_page_banner %}
   </div>
-
-  <form action="/users" id="search-news" method="post" >
+    <div class="results">
+	{% placeholder news_results %}
+    </div>
+  <!--form action="/users" id="search-news" method="post" >
     <fieldset>
       <p class="field search-by">
         <label for="search-by">Search By:</label>
@@ -101,6 +103,6 @@
         <a class="next_page" rel="next" href="/recipes?page=2">Next</a>
       </div>
     </div>
-  </form>
+  </form-->
 {% endblock %}
 

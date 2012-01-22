@@ -3,7 +3,13 @@ from django import forms
 from django.forms.fields import DateField, ChoiceField, MultipleChoiceField
 from django.forms.widgets import RadioSelect, CheckboxSelectMultiple
 
-COLOR_CHOICES = (('teal','teal'), ('dk-grey','dark grey'), ('lt-grey','light grey'), ('white','white'), ('black','black'),)
+COLOR_CHOICES = (('teal','teal'),
+    ('dk-grey','dark grey'),
+    ('lt-grey','light grey'),
+    ('white','white'),
+    ('black','black'),
+    ('green','green'),
+    ('red','red'),)
 
 class Slideshow(models.Model):
     name = models.CharField(max_length=30)

@@ -374,7 +374,11 @@ h2 {
     clear: both;
 }
 
-.tertiaryNav ul {
+.components .visualTertiaryNav {
+    float:left;
+}
+
+.tertiaryNav ul, .visualTertiaryNav ul {
     list-style:none;
     padding:0;
 }
@@ -433,6 +437,12 @@ footer {
     width:295px;
     margin: 7px 12px;
 }
+
+.productSpotlight .plugin_picture img {
+    border: 1px solid #333;
+}
+
+
 /*________end product page styles*/
 
 /*________form styles*/
@@ -524,18 +534,29 @@ form input[type=submit]:active {
   font-size: 16px;
 }
 
-.home .flex-container.visual-nav ul.slides li .slide-text a.learn-more {
+.home .flex-container.visual-nav ul.slides li .slide-text .learn-more a{
   font-size: 16px;
   text-transform: uppercase;
   color: #00a6ca;
+  text-decoration:none;
 }
 
+.home .flex-container.visual-nav ul.slides li .slide-text .learn-more a:before {
+    content:">> ";
+}
+
+.home .flex-container.visual-nav ul.slides li .slide-text .learn-more a:hover {
+    color:#fff;
+    background: #00a6ca;
+    padding:5px 8px;
+    margin-left:-8px;
+}
 
 /*_________lubrication styles*/
 .sealing .flex-container.visual-nav,
 .lubrication .flex-container.visual-nav {
   margin: 25px 0 0 44px;
-  width: 933px;
+  width: 936px;
 }
 .sealing .flexslider ul.slides li > .slide-text,
 .lubrication .flexslider ul.slides li > .slide-text {
@@ -852,6 +873,34 @@ p.error input {
 
 /*_________end news search styles*/
 
+/*_________careers styles */
+.careers .flexslider ul.slides .slide-text h2 span.description {
+    font-size: 48px;
+}
+
+
+.careers .flexslider ul.slides .slide-text h2 span.product {
+    font-size: 30px;
+    text-transform: none;
+}
+
+.careers .flexslider ul.slides li .slide-text p.caption {
+    width: 530px;
+    font-size: 36px;
+    line-height: 1em;
+    font-style: italic;
+}
+
+.careers .flexslider ul.slides li > .slide-text {
+    width:550px;
+    top:15px;
+}
+
+.careerContent {
+    width:933px;
+    margin: 0 auto;
+}
+/*_________end careers styles */
 
 /*
     ColorBox Core Style:
@@ -1072,7 +1121,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container.visual-nav .flexslider {
   padding: 0;
   border: none;
-  width: 931px;
+  width: 934px;
 }
 
 .flex-container.visual-nav .flex-direction-nav {
@@ -1081,6 +1130,34 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 }
 
 /* styles for stuff in slides */
+.teal {
+    color:#00a6ca
+}
+
+.lt-grey {
+    color:#666;
+}
+
+.dk-grey{
+    color:#333;
+}
+
+.white {
+    color:#fff;
+}
+
+.black {
+    color:#000;
+}
+
+.green {
+    color:#5c8727;
+}
+
+.red {
+    color:#b7001a;
+}
+
 .flexslider ul.slides li > .slide-text {
   position: absolute;
   top: 54px;
@@ -1091,7 +1168,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flexslider ul.slides li .slide-text h2 {
   margin-top: 0;
-  color: #00A6CA;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -1114,7 +1190,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flexslider ul.slides li .slide-text p.caption {
   width: 300px;
   margin-top: 40px;
-  color: #888;
   font-size: 15px;
 }
 
@@ -1151,7 +1226,70 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   background: #9F9FA3;
 }
 
+.locations_search_fields, .map-description {
+    width:933px;
+    margin:8px auto;
+}
 
+.locations_search_fields #locations_search_field {
+    width:307px;
+    height:27px;
+}
+
+.locations_search_fields #distance_field {
+    margin: 0 10px;
+    font-size: 16px;
+    border: 1px #888 solid;
+}
+
+#map_canvas {
+    width:933px;
+    height:526px;
+    margin:0 auto;
+}
+
+.locations {
+    width:933px;
+    margin:0 auto;
+}
+
+.locations p {
+    float:left;
+    margin:20px;
+}
+/* ============ SITEMAP STYLES================================================*/
+.sitemap h1 {
+    padding: 0 0 0 40px;
+}
+
+
+#sitemap ul {
+    list-style:none;
+}
+
+#sitemap a {
+    text-decoration:none;
+    color:#333;
+}
+
+#sitemap a:hover {
+    color:#00a6ca;
+}
+
+#sitemap ul {
+    margin: 5px 0 20px 0;
+}
+
+#sitemap > ul > li > a {
+    font-weight:bold;
+    font-size:16px;
+}
+
+#sitemap > ul > li {
+    border-bottom:1px solid #333;
+    margin: 0 40px 20px 0;
+}
+/* ============ END SITEMAP STYLES============================================*/
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }

@@ -8,8 +8,8 @@
           <a href="#">
             <img src="{{MEDIA_URL}}{{ slide.slide }}" alt="{{ slide.caption }}"/>
           </a>
-          <div class="slide-text {{slide.headingColor}}">
-		<h2>
+          <div class="slide-text">
+		<h2 class="{{slide.headingColor}}">
                 {% if slide.heading_1 %}
                   <span class="description">{{ slide.heading_1}}</span>
                 {% endif %}
