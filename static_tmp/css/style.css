@@ -813,9 +813,9 @@ p.error input {
   border-color: #99EBFF;
 }
 
-.news-search #articles {
-  list-style-type: none;
-  padding-left: 0;
+.news-search .articles {
+    width:600px;
+    margin:0 0 0 50px;
 }
 
 .news-search .article {
@@ -824,9 +824,15 @@ p.error input {
   border-bottom: 2px solid #DFDFDF;
 }
 
-.news-search .article a {
+.news-search .articles a, .news-search .articles h2 a {
   color: #2c9fb7;
   font-weight: normal;
+  display:inline-block;
+  margin:0 0 20px 0;
+}
+
+.news-search .articles h2 a {
+    margin: 0;
 }
 
 .news-search .article a:hover {
@@ -849,8 +855,9 @@ p.error input {
   padding-left: 5px;
 }
 
-.news-search .article h2 {
-  margin: 0 192px 0 0;
+.news-search .articles h2 {
+  border-top:1px solid #333;
+  padding:20px 0 0 0;
 }
 
 .news-search .article > p {
@@ -861,7 +868,7 @@ p.error input {
   margin: 0 192px 0 0;
 }
 
-.news-search .article h2 a {
+.news-search .articles h2 {
   color: #2c9fb7;
   font-size: 18px;
   font-weight: normal;
@@ -872,6 +879,20 @@ p.error input {
 }
 
 /*_________end news search styles*/
+
+/*_________post styles*/
+.post article {
+    width:933px;
+    margin:0 auto;
+}
+
+.post article h2 {
+    color:#00A6CA;
+    border-bottom:1px solid #00A6CA;
+}
+
+
+/*_________end post styles*/
 
 /*_________careers styles */
 .careers .flexslider ul.slides .slide-text h2 span.description {
