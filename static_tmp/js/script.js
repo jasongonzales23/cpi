@@ -62,8 +62,8 @@ CPI = {
 
 $(document).ready(function(){
     //this only goes on pages that get a sidebar nav
-    var heading = $('.nav').find('.ancestor').eq(1).text();
-    $('.secondaryAncestor').text(heading);
+    //var heading = $('.nav').find('.ancestor').eq(1).text();
+    //$('.secondaryAncestor').text(heading);
     
     //to put text onto the image for banners
     //pulls it from an H1 within the banner container
