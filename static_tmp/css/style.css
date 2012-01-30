@@ -567,7 +567,7 @@ form input[type=submit]:active {
 .sealing .flexslider ul.slides .slide-text .overview,
 .lubrication .flexslider ul.slides .slide-text .overview {
   float: left;
-  width: 465px;
+  width: 450px;
   margin-right: 15px;
 }
 .sealing .flexslider ul.slides .slide-text .components,
@@ -1113,7 +1113,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   background: transparent;
 }
 
-.flex-container.visual-nav .custom-controls li a span {
+.flex-container.visual-nav .custom-controls li a p {
   margin: 79px 0 0 4px;
   display: inline-block;
   text-decoration: none;
