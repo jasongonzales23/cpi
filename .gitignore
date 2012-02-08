@@ -1,5 +1,6 @@
 settings.py
 *.pyc
-CPI_to_CSS_v2.psd
+
 .DS_Store
 cpi_db
+CPI_to_CSS_v2.psd
