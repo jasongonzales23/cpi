@@ -57,6 +57,7 @@ class Location(models.Model):
     description = models.TextField(blank=True, null=True)
     phone = models.CharField(max_length=255, blank=True, null=True)
     url = models.URLField(max_length=255, blank=True, null=True)
+    email = models.EmailField(max_length=255, blank=True, null=True)
     
     objects = LocationManager()
 

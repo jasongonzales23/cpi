@@ -66,6 +66,9 @@ function get_location_marker_click_listener(location_info, location_marker) {
         if (location_info.url != '') { 
             content += "<br><strong>Website:</strong> <a href='" + location_info.url + "'>" + location_info.url + "</a>";
         }
+        if( location_info.email != ''){
+        content += "<br><a href='mailto:" + location_info.email + "'>" + location_info.email + "</a>";
+        }
         if (location_info.phone != '') { 
             content += "<br><strong>Phone:</strong> " + location_info.phone;
         }

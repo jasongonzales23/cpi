@@ -5,7 +5,7 @@ from django.conf import settings
 from store_locator.views import get_lat_long
 
 class LocationAdmin(admin.ModelAdmin):
-    list_display = ('id','name','address','phone', 'url')
+    list_display = ('id','name','address','phone', 'url', 'email')
     list_display_links = ('id','name',)
     list_filter = ('name',)
     
@@ -17,7 +17,7 @@ class LocationAdmin(admin.ModelAdmin):
             'fields': ('address', ('latitude', 'longitude'))
         }),
         ('Other Information', {
-            'fields': ('phone', 'url', 'description')
+            'fields': ('phone', 'url', 'email', 'description')
         }),
     )
     class Media:

@@ -34,6 +34,7 @@ def get_locations(request):
         location_dict['distance'] = location.distance
         location_dict['description'] = location.description
         location_dict['url'] = location.url
+        location_dict['email'] = location.email
         location_dict['phone'] = location.phone
         json_locations.append(location_dict)
     return HttpResponse(json.dumps(json_locations), mimetype="application/json")
