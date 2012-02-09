@@ -4,6 +4,8 @@ from banner.models import BannerPlugin as BannerPluginModel
 from cms.models.pluginmodel import CMSPlugin 
 from django.utils.translation import ugettext_lazy as _
 
+import admin
+
 class CMSBannerPlugin(CMSPluginBase):
     model = BannerPluginModel
     name = _("Banner Plugin")

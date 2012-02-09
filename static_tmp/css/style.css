@@ -160,7 +160,7 @@ h1.imageCaption60{
     position: relative;
     top: 185px;
     left: 10px;
-    color: white;
+    /*color: white;*/
     font-size: 60px;
     text-shadow: 3px 3px 5px #111;
     margin: -59px 0 0 0;
