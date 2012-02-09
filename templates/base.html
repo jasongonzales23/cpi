@@ -23,7 +23,7 @@
 	<div id="container">
 	    <header>
 		<div class="row">
-		    <h1><img src="{{STATIC_URL}}img/logo.png"/></h1>
+		    <h1>{% block logo %}<img src="{{STATIC_URL}}img/logo.png"/>{% endblock %}</h1>
 		    <ul class="nav">
 		      {% show_menu 0 1 1 2 %}
 		    </ul>
@@ -31,7 +31,7 @@
 			<li><a href="/locations/">Locations</a></li>
 			<li><a href="/contact">Contact</a></li>
 			<li><a href="/news/">News</a></li>
-			<li><a href="/calendar/">Calendar</a></li>
+			<li><a href="/events/">Events</a></li>
 			<li><a href="/careers/">Careers</a></li>
 			<li><a href="/resources/">Resources</a></li>
 			<li class="language"><a href="#" class="langHeading">Language</a>
