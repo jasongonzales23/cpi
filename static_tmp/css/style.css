@@ -89,7 +89,7 @@ body {
 }
 
 header {
-    overflow:auto;
+    overflow:visible;
     height:127px;
     background:#000;
 
