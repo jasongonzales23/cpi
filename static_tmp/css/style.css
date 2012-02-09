@@ -92,8 +92,30 @@ header {
     overflow:visible;
     height:127px;
     background:#000;
-
 }
+
+/*------------------------- table styles ------------------------------------*/
+table {
+    width: 100%;
+    border:1px solid #ccc;
+}
+
+th {
+    background:#444;
+    color:#fff;
+    padding:5px;
+}
+
+tr {
+    border-bottom:1px solid #ccc;
+}
+
+td {
+    border-right:1px solid #ccc;
+    padding:5px;
+}
+
+/*------------------------- end table styles --------------------------------*/
 
 .font8 {
     font-size:8px
