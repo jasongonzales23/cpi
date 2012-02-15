@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block body_class %}product-page{% endblock %}
+{% block logo %}{% placeholder logo inherit %}{% endblock %}
 {% block base_content %}
     <div class="banner">
         {% placeholder product_page_banner %}
