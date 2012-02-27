@@ -1,6 +1,7 @@
 /* Author: Jason Gonzales
 
 */
+/*
 function languageChooser(){
     //$('.language').hover(
     //    function(){$(this).children().show();},
@@ -58,7 +59,7 @@ CPI = {
     }
 }
 
-
+*/
 
 $(document).ready(function(){
     //this only goes on pages that get a sidebar nav
@@ -77,7 +78,7 @@ $(document).ready(function(){
       controlsContainer: '.flex-container'
     });
 
-    $('div.flex-container.visual-nav .flexslider').flexslider({
+    $('div.visual-nav .flexslider').flexslider({
       slideshow: false,
       manualControls: '.custom-controls li',
       controlsContainer: '.flex-container'
