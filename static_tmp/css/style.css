@@ -549,6 +549,11 @@ form input[type=submit]:active {
   text-transform: none;
 }
 
+.home .flex-container.visual-nav ul.slides li .slide-text .caption {
+    color:#222;
+    font-size:13px;
+}
+
 .home .flex-container.visual-nav ul.slides li .slide-text p.caption {
   width: auto;
   margin-top: 0;
