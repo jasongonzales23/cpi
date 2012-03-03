@@ -72,6 +72,7 @@ body {
 }
 
 #container {
+    min-width:1024px;
 }
 
 .row {
