@@ -409,6 +409,7 @@ h2 {
 .tertiaryNav ul li {
     font-size:20px;
     padding:3px;
+    margin:0 0 3px 0;
 }
 
 .tertiaryNav ul li a {
