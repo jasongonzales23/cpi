@@ -194,6 +194,10 @@ h2 {
     font-size:20px;
 }
 
+caption {
+    font-size:18px;
+}
+
 .nav, .secondary-nav, .footer-nav, .footer-info, .social {
     list-style:none;
 }
@@ -365,6 +369,7 @@ h2 {
 .tertiaryNav ul li.selected a{
     background: #00A6CA;
     color:#fff;
+    text-decoration: none;
 }
 
 .breadcrumbs ul {
@@ -462,11 +467,17 @@ footer {
     margin: 7px 12px;
 }
 
-.productSpotlight .plugin_picture img {
-    border: 1px solid #333;
+#main .productSpotlight .plugin_picture img {
+border: 1px solid #333;
+margin: 0;
+padding: 0;
 }
 
-
+#main .plugin_picture img {
+margin: 0 10px;
+padding: 10px;
+border: 1px solid #CCC;
+}
 /*________end product page styles*/
 
 /*________form styles*/
@@ -537,13 +548,19 @@ form input[type=submit]:active {
   margin-top: 54px;
 }
 
-.home .flex-container.visual-nav ul.slides li > .slide-text {
+.home .flex-container.visual-nav ul.slides li > .slide-text,
+.sealing .flex-container.visual-nav ul.slides li > .slide-text,
+.lubrication .flex-container.visual-nav ul.slides li > .slide-text
+{
   top: 23px;
   left: 632px;
   width: 293px;
 }
 
-.home .flex-container.visual-nav ul.slides li .slide-text h2 {
+.home .flex-container.visual-nav ul.slides li .slide-text h2,
+.sealing .flex-container.visual-nav ul.slides li .slide-text h2,
+.lubrication .flex-container.visual-nav ul.slides li .slide-text h2
+{
   margin-bottom: 2px;
   color: black;
   font-weight: bold;
@@ -551,12 +568,18 @@ form input[type=submit]:active {
   text-transform: none;
 }
 
-.home .flex-container.visual-nav ul.slides li .slide-text .caption {
+.home .flex-container.visual-nav ul.slides li .slide-text .caption,
+.sealing .flex-container.visual-nav ul.slides li .slide-text .caption,
+.lubrication .flex-container.visual-nav ul.slides li .slide-text .caption
+{
     color:#222;
     font-size:13px;
 }
 
-.home .flex-container.visual-nav ul.slides li .slide-text p.caption {
+.home .flex-container.visual-nav ul.slides li .slide-text p.caption,
+.sealing .flex-container.visual-nav ul.slides li .slide-text p.caption,
+.lubrication .flex-container.visual-nav ul.slides li .slide-text p.caption
+{
   width: auto;
   margin-top: 0;
   margin-bottom: 21px;
@@ -587,12 +610,12 @@ form input[type=submit]:active {
   margin: 25px 0 0 44px;
   width: 936px;
 }
-.sealing .flexslider ul.slides li > .slide-text,
-.lubrication .flexslider ul.slides li > .slide-text {
-  width: auto;
-  position: static;
-  margin-top: 20px;
-}
+/*.sealing .flexslider ul.slides li > .slide-text,*/
+/*.lubrication .flexslider ul.slides li > .slide-text {*/
+/*  width: auto;*/
+/*  position: static;*/
+/*  margin-top: 20px;*/
+/*}*/
 .sealing .flexslider ul.slides .slide-text .overview,
 .lubrication .flexslider ul.slides .slide-text .overview {
   float: left;
