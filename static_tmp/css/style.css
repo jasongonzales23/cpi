@@ -487,7 +487,7 @@ margin: 0;
 padding: 0;
 }
 
-#main .plugin_picture img {
+.withBorder img {
 margin: 0 10px;
 padding: 10px;
 border: 1px solid #CCC;
@@ -957,10 +957,10 @@ p.error input {
     margin:0 auto;
 }
 
-.post article h2 {
-    color:#00A6CA;
-    border-bottom:1px solid #00A6CA;
-}
+/*.post article h2 {*/
+/*    color:#00A6CA;*/
+/*    border-bottom:1px solid #00A6CA;*/
+/*}*/
 
 
 /*_________end post styles*/
@@ -1222,8 +1222,15 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 }
 
 /* styles for stuff in slides */
+
+.tealHeadingUnderline {
+    color:#00a6ca;
+    border-bottom:1px solid #00a6ca;
+    
+}
+
 .teal {
-    color:#00a6ca
+    color:#00a6ca;
 }
 
 .lt-grey {
