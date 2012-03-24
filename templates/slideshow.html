@@ -1,5 +1,5 @@
-<div class="flex-container">
-  <div class="flexslider">
+<div class="flex-container" id="slideshow-container">
+  <div class="flexslider" id="slideshow">
     <ul class="slides">
       {% for slide in slideshow.slide_set.all %}
         <li>
@@ -30,7 +30,7 @@
       {% endfor %}
     </ul>
   </div>
-  <ul class="custom-controls">
+  <ul class="custom-controls" id="slideshow-controls">
     {% for slide in slideshow.slide_set.all %}
       <li>
         <a href="#">

@@ -9,7 +9,7 @@ var zoom_list = {
     "250"  :6,
     "500" : 4
 }
-var markers = new Array;
+var markers = [];
 var latlng = new google.maps.LatLng(38.410558,-37.265625);
 var myOptions = {
   zoom: 3,
@@ -71,10 +71,11 @@ function location_search() {
     search_value = $("#locations_search_field").val();
     var distance = $("#distance_field").val();
     var new_zoom = zoom_list[distance];
+    var bounds = new google.maps.LatLngBounds();
     $.get(get_lat_long_url + "?q=" + search_value, function(data) {
         var latitude = data.split(',')[2];
         var longitude = data.split(',')[3];
-        map.setZoom(new_zoom);            
+        //map.setZoom(new_zoom);            
         /*var marker = new google.maps.Marker({
             position: new google.maps.LatLng(latitude, longitude),
             title: search_value,
@@ -89,10 +90,14 @@ function location_search() {
                     position: new google.maps.LatLng(location_info.latitude, location_info.longitude),
                     title: location_info.name
                 });
+                var lat_lng = new google.maps.LatLng(location_info.latitude, location_info.longitude);
                 location_marker.setMap(map);
                 markers.push(location_marker);
+                bounds.extend(lat_lng);
                 google.maps.event.addListener(location_marker, "click", get_location_marker_click_listener(location_info, location_marker));
+                
             });
+            map.fitBounds(bounds);
         });
     });
 }
