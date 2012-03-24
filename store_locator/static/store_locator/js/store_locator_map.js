@@ -83,7 +83,7 @@ function location_search() {
         marker.setMap(map);
         markers.push(marker);*/
         map.setCenter(new google.maps.LatLng(latitude, longitude));
-        $.getJSON(get_locations_url + "?lat=" + latitude + "&long=" + longitude + "&distance=24900", function(data) {
+        $.getJSON(get_locations_url + "?lat=" + latitude + "&long=" + longitude, function(data) {
             $.each(data, function() {
                 location_info = this;
                 var location_marker = new google.maps.Marker({
