@@ -9,13 +9,13 @@ $(document).ready(function(){
       controlsContainer: '.flex-container'
     });
     
-/*
+
     $('div.visual-nav .flexslider').flexslider({
       slideshow: false,
       manualControls: '.custom-controls li',
       controlsContainer: '.flex-container'
     });
-    */
+
 });
 
 
