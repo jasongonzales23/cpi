@@ -98,6 +98,7 @@ function location_search() {
                 
             });
             map.fitBounds(bounds);
+            map.setZoom(new_zoom);
         });
     });
 }
