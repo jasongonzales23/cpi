@@ -2,20 +2,19 @@
 */
 
 
-$(document).ready(function(){
+$(window).load(function(){
     
-    $('#slideshow').flexslider({
-      manualControls: '#slideshow-controls li',
-      controlsContainer: '.flex-container'
+    $('#slideshow-container').flexslider({
+        slideshow: true,
+        manualControls: '#slideshow-controls li a',
+        controlsContainer: '#slideshow-container'
     });
     
-
-    $('div.visual-nav .flexslider').flexslider({
-      slideshow: false,
-      manualControls: '.custom-controls li',
-      controlsContainer: '.flex-container'
+    $('.visual-nav').flexslider({
+        slideshow: false,
+        manualControls: '.custom-controls li',
+        controlsContainer: '.flex-container'
     });
-
 });
 
 

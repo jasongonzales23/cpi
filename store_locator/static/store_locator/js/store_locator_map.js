@@ -10,9 +10,9 @@ var zoom_list = {
     "500" : 4
 }
 var markers = [];
-var latlng = new google.maps.LatLng(38.410558,-37.265625);
+var latlng = new google.maps.LatLng(22.908902,-1.40625);
 var myOptions = {
-  zoom: 3,
+  zoom: 2,
   center: latlng,
   mapTypeId: google.maps.MapTypeId.ROADMAP
 };
@@ -54,7 +54,7 @@ function location_search() {
     clear_markers();
     search_value = $("#locations_search_field").val();
     //var distance = $("#distance_field").val();
-    var distance = 100;
+    var distance = 500;
     var new_zoom = zoom_list[distance];
     var bounds = new google.maps.LatLngBounds();
     var results = 0;
