@@ -1161,8 +1161,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container.visual-nav .custom-controls {
   height: 102px;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 13px;
+  padding: 7px 0 13px 20px;
   border: 1px solid #D1D1D1;
   border-bottom: none;
   background: #E1E1E1;
@@ -1197,22 +1196,107 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   font-size: 11px;
 }
 
-.flex-container.visual-nav .custom-controls li.wrench {
-  background-image: url(../img/icons/wrench.png);
-}
-
-.flex-container.visual-nav .custom-controls li.info {
-  background-image: url(../img/icons/info.png);
-}
-
-.flex-container.visual-nav .custom-controls li.sealing {
-  background-image: url(../img/icons/sealing.png);
+.flex-container.visual-nav .custom-controls li {
+    background-image:url(../img/icon-sprite.png);
+    background-position:-21px 0px;
 }
 
 .flex-container.visual-nav .custom-controls li.active,
 .flex-container.visual-nav .custom-controls li:hover {
-  background-position: -80px 0;
+  background-position:-21px -101px;
 }
+
+.flex-container.visual-nav .custom-controls li.sealing {
+  background-position:-921px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.sealing.active,
+.flex-container.visual-nav .custom-controls li.sealing:hover {
+  background-position:-921px -101px;
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication {
+  background-position:-821px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication.active,
+.flex-container.visual-nav .custom-controls li.lubrication:hover {
+  background-position:-821px -101px;
+}
+
+.flex-container.visual-nav .custom-controls li.services {
+  background-position:-717px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.services.active,
+.flex-container.visual-nav .custom-controls li.services:hover {
+  background-position:-717px -101px;
+}
+
+.flex-container.visual-nav .custom-controls li.valves {
+  background-position:-121px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.valves.active,
+.flex-container.visual-nav .custom-controls li.valves:hover {
+  background-position:-121px -101px;
+}
+
+.flex-container.visual-nav .custom-controls li.packing-wiper-rings {
+  background-position:-521px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.packing-wiper-rings.active,
+.flex-container.visual-nav .custom-controls li.packing-wiper-rings:hover {
+  background-position:-521px -101px;
+}
+
+
+.flex-container.visual-nav .custom-controls li.packing-wiper-cases {
+  background-position:-1021px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.packing-wiper-cases.active,
+.flex-container.visual-nav .custom-controls li.packing-wiper-cases:hover {
+  background-position:-1021px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.pistons-rods {
+  background-position:-1121px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.pistons-rods.active,
+.flex-container.visual-nav .custom-controls li.pistons-rods:hover {
+  background-position:-1121px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.piston-rings {
+  background-position:-421px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.piston-rings.active,
+.flex-container.visual-nav .custom-controls li.piston-rings:hover {
+  background-position:-421px -101px;
+}
+
+.flex-container.visual-nav .custom-controls li.rider-rings {
+  background-position:-321px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.rider-rings.active,
+.flex-container.visual-nav .custom-controls li.rider-rings:hover {
+  background-position:-321px -101px;
+}
+
+.flex-container.visual-nav .custom-controls li.replacement-parts {
+  background-position:-621px 0px;
+}
+
+.flex-container.visual-nav .custom-controls li.replacement-parts.active,
+.flex-container.visual-nav .custom-controls li.replacement-parts:hover {
+  background-position:-621px -101px;
+}
+
 
 .flex-container.visual-nav .flexslider {
   padding: 0;

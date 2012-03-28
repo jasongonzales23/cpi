@@ -2,7 +2,7 @@
 */
 
 
-$(window).load(function(){
+$(document).ready(function(){
     
     $('#slideshow-container').flexslider({
         slideshow: true,
