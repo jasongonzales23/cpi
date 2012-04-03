@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block body_class %}two-column{% endblock %}
+
+{% block base_content %}
+    <div class="banner">
+        {% placeholder post_banner %}
+    </div>
+    <article class="left">
+        {% placeholder main_content %}
+    </article>
+    <article class="right">
+        {% placeholder right_column%}
+    </article>
+{% endblock %}

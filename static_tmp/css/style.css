@@ -1297,7 +1297,50 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   background-position:-621px -101px;
 }
 
+.flex-container.visual-nav .custom-controls li.lubricator-pumps{
+    background-position:-1421px 0px;  
+}
 
+.flex-container.visual-nav .custom-controls li.lubricator-pumps.active,
+.flex-container.visual-nav .custom-controls li.lubricator-pumps:hover {
+  background-position:-1421px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication-boxes{
+    background-position:-1321px 0px;  
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication-boxes.active,
+.flex-container.visual-nav .custom-controls li.lubrication-boxes:hover {
+  background-position:-1321px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.divider-blocks{
+    background-position:-1521px 0px;  
+}
+
+.flex-container.visual-nav .custom-controls li.divider-blocks.active,
+.flex-container.visual-nav .custom-controls li.divider-blocks:hover {
+  background-position:-1521px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.check-valves{
+    background-position:-1721px 0px;  
+}
+
+.flex-container.visual-nav .custom-controls li.check-valves.active,
+.flex-container.visual-nav .custom-controls li.check-valves:hover {
+  background-position:-1721px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.no-flow{
+    background-position:-1621px 0px;  
+}
+
+.flex-container.visual-nav .custom-controls li.no-flow.active,
+.flex-container.visual-nav .custom-controls li.no-flow:hover {
+  background-position:-1621px -100px;
+}
 .flex-container.visual-nav .flexslider {
   padding: 0;
   border: none;
@@ -1444,6 +1487,23 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     float:left;
     margin:20px;
 }
+
+/* ============ TWO-COLUMN ===================================================*/
+.two-column .left {
+    float:left;
+    width: 530px;
+    margin:25px 45px;
+}
+
+.two-column .right {
+    float: left;
+    width: 325px;
+    margin: 40px 0px;
+    padding: 20px;
+    background: #EEE;
+    border: 1px solid #CCC;
+}
+
 /* ============ SITEMAP STYLES================================================*/
 .sitemap h1 {
     padding: 0 0 0 40px;
