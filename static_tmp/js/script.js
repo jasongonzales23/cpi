@@ -5,7 +5,7 @@
 $(document).ready(function(){
     
     $('#slideshow-container').flexslider({
-        slideshow: true,
+        slideshow: false,
         manualControls: '#slideshow-controls li a',
         controlsContainer: '#slideshow-container'
     });
