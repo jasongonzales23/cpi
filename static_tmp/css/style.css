@@ -1203,7 +1203,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.active,
 .flex-container.visual-nav .custom-controls li:hover {
-  background-position:-21px -101px;
+  background-position:-21px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.sealing {
@@ -1212,7 +1212,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.sealing.active,
 .flex-container.visual-nav .custom-controls li.sealing:hover {
-  background-position:-921px -101px;
+  background-position:-921px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.lubrication {
@@ -1221,7 +1221,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.lubrication.active,
 .flex-container.visual-nav .custom-controls li.lubrication:hover {
-  background-position:-821px -101px;
+  background-position:-821px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.services {
@@ -1230,7 +1230,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.services.active,
 .flex-container.visual-nav .custom-controls li.services:hover {
-  background-position:-717px -101px;
+  background-position:-717px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.valves {
@@ -1239,7 +1239,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.valves.active,
 .flex-container.visual-nav .custom-controls li.valves:hover {
-  background-position:-121px -101px;
+  background-position:-121px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.packing-wiper-rings {
@@ -1248,7 +1248,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.packing-wiper-rings.active,
 .flex-container.visual-nav .custom-controls li.packing-wiper-rings:hover {
-  background-position:-521px -101px;
+  background-position:-521px -100px;
 }
 
 
@@ -1258,7 +1258,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.packing-wiper-cases.active,
 .flex-container.visual-nav .custom-controls li.packing-wiper-cases:hover {
-  background-position:-1021px -100px;
+    background-position:-1021px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.pistons-rods {
@@ -1276,7 +1276,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.piston-rings.active,
 .flex-container.visual-nav .custom-controls li.piston-rings:hover {
-  background-position:-421px -101px;
+  background-position:-421px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.rider-rings {
@@ -1285,7 +1285,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.rider-rings.active,
 .flex-container.visual-nav .custom-controls li.rider-rings:hover {
-  background-position:-321px -101px;
+  background-position:-321px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.replacement-parts {
@@ -1294,7 +1294,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.replacement-parts.active,
 .flex-container.visual-nav .custom-controls li.replacement-parts:hover {
-  background-position:-621px -101px;
+  background-position:-621px -100px;
 }
 
 .flex-container.visual-nav .custom-controls li.lubricator-pumps{
@@ -1321,7 +1321,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .flex-container.visual-nav .custom-controls li.divider-blocks.active,
 .flex-container.visual-nav .custom-controls li.divider-blocks:hover {
-  background-position:-1521px -100px;
+  background-position:-1521px -99px;
 }
 
 .flex-container.visual-nav .custom-controls li.check-valves{
@@ -1341,6 +1341,25 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container.visual-nav .custom-controls li.no-flow:hover {
   background-position:-1621px -100px;
 }
+
+.flex-container.visual-nav .custom-controls li.lubrication-design{
+    background-position:-1821px 0px;  
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication-design.active,
+.flex-container.visual-nav .custom-controls li.lubrication-design:hover {
+  background-position:-1821px -100px;
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication-accessories{
+    background-position:-1921px 0px;  
+}
+
+.flex-container.visual-nav .custom-controls li.lubrication-accessories.active,
+.flex-container.visual-nav .custom-controls li.lubrication-accessories:hover {
+  background-position:-1921px -100px;
+}
+
 .flex-container.visual-nav .flexslider {
   padding: 0;
   border: none;
