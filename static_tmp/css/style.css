@@ -77,7 +77,6 @@ td { vertical-align: top; }
          url('fonts/ico-webfont.svg#IcoMoonRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -488,7 +487,7 @@ padding: 0;
 }
 
 .withBorder img {
-margin: 0 10px;
+margin: 0 40px;
 padding: 10px;
 border: 1px solid #CCC;
 }
@@ -1172,8 +1171,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   width: 78px;
   height: 110px;
   margin: 0 2px 0 7px;
-  background: url(../img/icons/oil-icon.png) -1px 0;
-  background-repeat: no-repeat;
 }
 
 .flex-container.visual-nav .custom-controls li a {
@@ -1359,6 +1356,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-container.visual-nav .custom-controls li.lubrication-accessories:hover {
   background-position:-1921px -100px;
 }
+
+
 
 .flex-container.visual-nav .flexslider {
   padding: 0;
