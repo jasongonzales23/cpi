@@ -15,6 +15,9 @@ $(document).ready(function(){
         manualControls: '.custom-controls li',
         controlsContainer: '.flex-container'
     });
+    
+    $("a[href^='http://']").attr("target","_blank");
+
 });
 
 
