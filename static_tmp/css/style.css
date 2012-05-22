@@ -395,6 +395,10 @@ caption {
     font-size:14px;
 }
 
+.ie7 .breadcrumbs ul li {
+    display:inline;
+}
+
 .breadcrumbs ul li a {
     color:#00a6ca;
 }
