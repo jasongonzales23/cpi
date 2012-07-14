@@ -84,6 +84,10 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+  font-size: 26px;
+}
+
 #container {
     min-width:1024px;
 }
@@ -192,16 +196,35 @@ header h1 {
 }
 
 /*this is for the demo*/
-h1.imageCaption60{
+h1.banner{
     position: relative;
     top: 185px;
     left: 10px;
-    /*color: white;*/
-    font-size: 60px;
     text-shadow: 3px 3px 5px #111;
+}
+
+h1.banner.large {
+    font-size: 60px;
     margin: -59px 0 0 0;
 }
 
+h1.banner.medium {
+    font-size: 48px;
+    margin: -45px 0 0 0;
+}
+
+h1.banner.small {
+    font-size: 24px;
+    margin: -15px 0 0 0;
+}
+
+h1.banner.normal {
+    font-weight: normal;
+}
+
+h1.banner.bold {
+    font-weight: bold;
+}
 
 h2 {
     font-size:20px;
@@ -234,7 +257,7 @@ caption {
     color:#00a6ca;
     text-decoration:none;
     text-transform:uppercase;
-    font-size:17px;
+    font-size:18px;
 }
 
 .secondary-nav a {
